@@ -1,0 +1,17 @@
+version: '0.2'
+sources:
+- database: local
+  link: ''
+  cache_path: ''
+  cache_timestamp: ''
+  filters: null
+expanded: []
+tasks: {}
+flags:
+  quests: 0
+  tracks: 0
+  tasks: 0
+  graph: 0
+  xray: 0
+lang: py
+selected: ''

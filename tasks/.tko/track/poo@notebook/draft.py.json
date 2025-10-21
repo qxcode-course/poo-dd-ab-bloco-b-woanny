@@ -1,0 +1,9 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-21_03-30-44",
+            "content": "class Notebook:\n    def __init__(self):\n        self.__ligado: bool = False #True = Ligado False = Desligado\n\n    def ligar(self):\n        if not self.__ligado: # se n\u00e3o for falso \u00e9 verdadeiro e verdadeiro \u00e9 ligado\n            self.__ligado = True\n            print('notebook ligado')\n        else:\n            print('notebook j\u00e1 est\u00e1 ligado')\n\n    def desligar(self):\n        if self.__ligado: # se for falso \u00e9 falso e falso \u00e9 desligado\n            self.__ligado = False\n            print ('notebook desligado')\n        else:\n            print ('notebook j\u00e1 est\u00e1 desligado')\n\n    def mostrar(self):\n        status = 'Ligado' if self.__ligado else 'Desligado'\n        print(f'Status: {status}')\n\n    def usar(self, tempo):\n        if not self.__ligado:\n            print('erro: ligue o notebook primeiro')\n        else:\n            print(f'Usando por {tempo} minutos')\n\nnotebook = Notebook() # criando notebook\nnotebook.mostrar()    # msg: Status: Desligado\nnotebook.usar(10)     # msg: erro: ligue o notebook primeiro\nnotebook.ligar()      # msg: notebook ligado\nnotebook.mostrar()    # msg: Status: Ligado\nnotebook.usar(10)     # msg: Usando por 10 minutos\nnotebook.desligar()   # msg: notebook desligado",
+            "lines": "35"
+        }
+    ]
+}
