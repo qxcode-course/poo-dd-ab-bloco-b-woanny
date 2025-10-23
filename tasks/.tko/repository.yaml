@@ -8,15 +8,16 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-dd-ab-bloco-b-woanny/tasks/.tko/cache/poo.md
-  cache_timestamp: '2025-10-21 03:24:57'
+  cache_timestamp: '2025-10-22 23:43:59'
   filters:
   - acesso
   - simples
 expanded:
 - poo@campanha-principal
 - poo@bloco_b-agregação-simples
+- poo@bloco_b-modificadores-de-acesso
 tasks:
-  poo@notebook: '{rate:30, iagen:gpt_pra_tirar_duvidas, alone:4, study:90}'
+  poo@notebook: '{rate:60, iagen:gpt_pra_tirar_duvidas, alone:6, study:180}'
 flags:
   quests: 0
   tracks: 0
