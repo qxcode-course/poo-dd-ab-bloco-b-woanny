@@ -8,7 +8,7 @@ sources:
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
   cache_path: /workspaces/poo-dd-ab-bloco-b-woanny/tasks/.tko/cache/poo.md
-  cache_timestamp: '2025-10-27 10:51:27'
+  cache_timestamp: '2025-10-28 00:32:29'
   filters:
   - acesso
   - simples
@@ -22,7 +22,7 @@ tasks:
   poo@grafite: '{rate:100, human:amigo, iagen:pra_ajuda_a_entender_oq_errei, alone:7,
     study:200}'
   poo@motouber: '{rate:100, human:amigo, iagen:encontrar_meus_erros, alone:7, study:240}'
-  poo@notebook: '{rate:60, iagen:gpt_pra_tirar_duvidas, alone:6, study:180}'
+  poo@notebook: '{rate:100, human:amigo, iagen:gpt_pra_tirar_duvidas, alone:7, study:240}'
 flags:
   quests: 0
   tracks: 0
@@ -30,4 +30,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@motouber
+selected: poo@charger

@@ -3,6 +3,7 @@ class Notebook:
         self.__ligado: bool = False # True = Ligado False = Desligado
         self.__bateria: Bateria | None = None
         self.__carregador: Carregador | None = None 
+        self.__tempo_ligado = 0  # não foi usado ainda
 
     def mostrar(self):
         status = 'Ligado' if self.__ligado else 'Desligado'
@@ -122,37 +123,3 @@ class Carregador:
 
     def getPotencia(self):
         return self.__potencia
-
-notebook = Notebook() # criando notebook
-notebook.mostrar()    # msg: Status: Desligado, Bateria: Nenhuma, Carregador: Desconectado
-notebook.ligar()      # msg: não foi possível ligar
-notebook.usar(10)     # msg: notebook desligado
-
-bateria = Bateria(50) # criando bateria que suporta 50 minutos e começa carregada
-bateria.mostrar()     # (50/50)
-notebook.setBateria(bateria) # coloca a bateria no notebook
-
-notebook.mostrar() # msg: Status: Desligado, Bateria: (50/50), Carregador: Desconectado
-notebook.ligar()   # msg: notebook ligado
-notebook.mostrar() # msg: Status: Ligado, Bateria: (50/50), Carregador: Desconectado
-notebook.usar(30)  # msb: Usando por 30 minutos
-notebook.mostrar() # msg: Status: Ligado, Bateria: (20/50), Carregador: Desconectado
-notebook.usar(30)  # msb: Usando por 20 minutos, notebook descarregou
-notebook.mostrar() # msg: Status: Desligado, Bateria: (0/50), Carregador: Desconectado
-
-bateria = notebook.rmBateria() # msg: bateria removida
-bateria.mostrar()  # (0/50)
-notebook.mostrar() # msg: Status: Desligado, Bateria: Nenhuma, Carregador: Desconectado
-
-carregador = Carregador(2) # criando carregador com 2 de potencia
-carregador.mostrar() # (Potência 2)
-
-notebook.setCarregador(carregador) # adicionando carregador no notebook
-notebook.mostrar() # msg: Status: Desligado, Bateria: Nenhuma, Carregador: (Potência 2)
-notebook.ligar()   # msg: notebook ligado
-notebook.mostrar() # msg: Status: Ligado, Bateria: Nenhuma, Carregador: (Potência 2)
-
-notebook.setBateria(bateria)
-notebook.mostrar() # msg: Status: Ligado, Bateria: (0/50), Carregador: (Potência 2)
-notebook.usar(10)  # msg: Notebook utilizado com sucesso
-notebook.mostrar() # msg: Status: Ligado, Bateria: (20/50), Carregador: (Potência 2)

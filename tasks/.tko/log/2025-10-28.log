@@ -1,0 +1,12 @@
+2025-10-28 00:32:37, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 00:32:47, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-28 00:40:15, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 00:40:17, EXEC, v:1, k:poo@notebook, mode:FREE, size:160
+2025-10-28 00:42:37, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-28 00:53:44, MOVE, v:1, k:poo@notebook, mode:PICK
+2025-10-28 00:53:44, EXEC, v:1, k:poo@notebook, mode:LOCK, rate:0, size:158
+2025-10-28 00:53:57, MOVE, v:1, k:poo@notebook, mode:BACK
+2025-10-28 00:54:31, SELF, v:1, k:poo@notebook, rate:100, human:amigo, iagen:gpt_pra_tirar_duvidas, alone:7, study:240
+2025-10-28 00:55:38, MOVE, v:1, k:poo@charger, mode:DOWN
+2025-10-28 00:56:13, MOVE, v:1, k:poo@charger, mode:PICK
+2025-10-28 00:56:26, EXEC, v:1, k:poo@charger, mode:FULL, rate:0, size:0
