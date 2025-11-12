@@ -1,0 +1,69 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-03_17-18-45",
+            "content": "@@ -1,134 +0,0 @@\n-class Foo:%0A%0Avazio_Int: int = %5B%5D%0Avazio_Class = %5BFoo%5D%0A%0Apreenchido = %5B'Batata', 'Cenoura', 'Alface'%5D%0A%0Aler = preenchido.count()%0Aprint(ler)\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-03_17-57-11",
+            "content": "@@ -23,17 +23,16 @@\n  int = %5B\n- \n %5D%0Avazio_\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-03_17-58-06",
+            "content": "@@ -5,17 +5,16 @@\n s Foo:%0A%0A\n-#\n vazio_In\n@@ -30,9 +30,8 @@\n %5B %5D%0A\n-#\n vazi\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-03_17-59-15",
+            "content": "@@ -1,9 +1,8 @@\n-#\n class Fo\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-03_18-01-06",
+            "content": "@@ -119,24 +119,16 @@\n o.count(\n-'Alface'\n )%0Aprint(\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-03_18-01-41",
+            "content": "@@ -124,16 +124,14 @@\n nt('\n-Cenoura%0A\n+Alface\n ')%0Ap\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-03_18-01-59",
+            "content": "@@ -120,22 +120,24 @@\n .count('\n-Batata\n+Cenoura%0A\n ')%0Aprint\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-11-03_18-02-33",
+            "content": "@@ -106,12 +106,8 @@\n r = \n-len(\n pree\n@@ -112,16 +112,31 @@\n eenchido\n+.count('Batata'\n )%0Aprint(\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-03_18-03-22",
+            "content": "@@ -121,90 +121,15 @@\n ido)\n- # Obter o tamanho do array%0Aprint(ler)%0A%0Apreenchido.append('Tomate')%0A%0Aprint(preenchido\n+%0Aprint(ler\n )\n",
+            "lines": "9"
+        },
+        {
+            "label": "2025-11-03_18-05-15",
+            "content": "@@ -157,17 +157,16 @@\n t(ler)%0A%0A\n-#\n preenchi\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-03_18-05-30",
+            "content": "@@ -1,8 +1,9 @@\n+#\n class Fo\n@@ -9,1796 +9,203 @@\n oo:%0A\n-    def __init__(self, x: int):%0A        self.x = x%0A%0A    def __str__(self):%0A        return f'Foo(%7Bself.x%7D)'%0A%0A%0A# Array vazio%0Avazio: list%5Bint%5D = %5B%5D%0A%0A# Array preenchido%0Apreenchido: list%5Bint%5D = %5B'Batata', 'Cenoura', 'Alface', 'Brocolis'%5D%0A%0A# Array preenchido com objetos%0Alista_objetos: list%5BFoo%5D = %5BFoo(1), Foo(2), Foo(3)%5D%0A%0A# Tamanho do array%0Aprint(%22Tamanho:%22, len(preenchido))%0A%0A# Adicionar elemento no final%0Apreenchido.append(6)%0A%0A# Remover elemento no final%0Apreenchido.pop()%0A%0A# Adicionar elemento no in%C3%ADcio%0Apreenchido.insert(0, 100)%0A%0A# Remover elemento no in%C3%ADcio%0Apreenchido.pop(0)%0A%0A# Adicionar em uma posi%C3%A7%C3%A3o espec%C3%ADfica%0Apreenchido.insert(2, 'Cebola')%0A%0A# Remover em uma posi%C3%A7%C3%A3o espec%C3%ADfica%0Apreenchido.pop(2)%0A%0A# Impress%C3%A3o formatada usando join%0Aprint(%22Vazio:%22, %22, %22.join(preenchido))%0A%0A# Criar array com sequ%C3%AAncia de 0 a n%0Asequencia = list(range(0, 11))%0A%0A# Criar array com valores aleat%C3%B3rios%0Aimport random%0Aaleatorios = %5Brandom.randint(1, 10) for _ in range(5)%5D%0A%0A# Acessar elemento por %C3%ADndice%0Aprint(%22Primeiro elemento:%22, vazio%5B0%5D)%0A%0A# Percorrer com for-range%0Afor item in vazio:%0A        print(item)%0A%0A# Percorrer com for indexado%0Afor i in range(len(vazio)):%0A        print(i, vazio%5Bi%5D)%0A%0A# Procurar elemento X manualmente%0Aprocura = %22Cenoura%22%0Aencontrado = False%0Afor item in vazio:%0A    if item == procura:%0A        encontrado = True%0A%0A# Procurar usando fun%C3%A7%C3%A3o nativa%0Aprint(%22Cenoura est%C3%A1 na lista?%22, procura in vazio)%0A%0A# Filtrar elementos (ex: com letra A)%0Afiltrados = %5Bx for x in vazio if %22a%22 in x.lower()%5D%0Aprint(filtrados)%0A%0A# Transformar elementos (ex: mai%C3%BAsculas)%0Atransformados = %5Bx.upper() for x in vazio%5D%0A%0A# Buscar e remover um elemento X%0Aif %22Batata%22 in vazio:%0A    vazio.remove(%22Batata%22)%0Aprint(vazio)%0A%0A# Remover todos os elementos iguais a X%0Alista = %5B1, 2, 2, 3, 2, 4%5D%0Alista = %5Bx for x in lista if x != 2%5D%0A%0A%0A\n+%0A#vazio_Int: int = %5B %5D%0A#vazio_Class = %5BFoo%5D%0A%0Apreenchido = %5B'Batata', 'Cenoura', 'Alface'%5D%0A%0Aler = len(preenchido) # Obter o tamanho do array%0Aprint(ler)%0A%0A#preenchido.append('Tomate')%0A%0Aprint(preenchido)\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-11-08_12-47-35",
+            "content": "@@ -239,31 +239,8 @@\n lis'\n-, 'Repolho', 'Rabanete'\n %5D%0A%0A#\n@@ -379,41 +379,8 @@\n do))\n-%0Aprint('Preenchido: ',preenchido)\n %0A%0A# \n@@ -429,52 +429,9 @@\n end(\n-'Tomate')%0Aprint('Append Tomate: ',preenchido\n+6\n )%0A%0A#\n@@ -477,40 +477,8 @@\n op()\n-%0Aprint('Pop final: ',preenchido)\n %0A%0A# \n@@ -531,46 +531,11 @@\n (0, \n-'Banana')%0Aprint('Inset 0: ',preenchido\n+100\n )%0A%0A#\n@@ -583,36 +583,8 @@\n p(0)\n-%0Aprint('Pop 0: ',preenchido)\n %0A%0A# \n@@ -653,46 +653,8 @@\n la')\n-%0Aprint('Insert Cebola 2: ',preenchido)\n %0A%0A# \n@@ -708,36 +708,8 @@\n p(2)\n-%0Aprint('Pop 2: ',preenchido)\n %0A%0A# \n@@ -751,23 +751,13 @@\n nt(%22\n-Formatacao Join\n+Vazio\n :%22, \n@@ -851,25 +851,8 @@\n 11))\n-%0Aprint(sequencia)\n %0A%0A# \n@@ -958,26 +958,8 @@\n (5)%5D\n-%0Aprint(aleatorios)\n %0A%0A# \n@@ -1005,21 +1005,26 @@\n eiro\n-:%22, sequencia\n+ elemento:%22, vazio\n %5B0%5D)\n@@ -1067,46 +1067,29 @@\n  in \n-sequencia\n+vazio\n :%0A    \n+ \n+   \n print(\n-'Percorrendo: ', \n item\n@@ -1143,54 +1143,39 @@\n len(\n-sequencia)):%0A    print('Index: ', i, sequencia\n+vazio)):%0A        print(i, vazio\n %5Bi%5D)\n@@ -1257,33 +1257,28 @@\n for item in \n-preenchid\n+vazi\n o:%0A    if it\n@@ -1362,19 +1362,29 @@\n nt(%22\n-Tem \n Cenoura\n+ est%C3%A1 na lista\n ?%22, \n@@ -1394,25 +1394,20 @@\n cura in \n-preenchid\n+vazi\n o)%0A%0A# Fi\n@@ -1464,25 +1464,20 @@\n or x in \n-preenchid\n+vazi\n o if %22a%22\n@@ -1586,25 +1586,20 @@\n or x in \n-preenchid\n+vazi\n o%5D%0A%0A# Bu\n@@ -1646,33 +1646,23 @@\n  in \n-preenchido:%0A    preenchid\n+vazio:%0A    vazi\n o.re\n@@ -1682,25 +1682,20 @@\n )%0Aprint(\n-preenchid\n+vazi\n o)%0A%0A# Re\n@@ -1798,18 +1798,6 @@\n  2%5D%0A\n-print(lista)\n %0A%0A\n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-11-08_13-07-14",
+            "content": "class Foo:\n    def __init__(self, x: int):\n        self.x = x\n\n    def __str__(self):\n        return f'Foo({self.x})'\n\n\n# Array vazio\nvazio: list[int] = []\n\n# Array preenchido\npreenchido: list[int] = ['Batata', 'Cenoura', 'Alface', 'Brocolis', 'Repolho', 'Rabanete']\n\n# Array preenchido com objetos\nlista_objetos: list[Foo] = [Foo(1), Foo(2), Foo(3)]\n\n# Tamanho do array\nprint(\"Tamanho:\", len(preenchido))\nprint('Preenchido: ',preenchido)\n\n# Adicionar elemento no final\npreenchido.append('Tomate')\nprint('Append Tomate: ',preenchido)\n\n# Remover elemento no final\npreenchido.pop()\nprint('Pop final: ',preenchido)\n\n# Adicionar elemento no in\u00edcio\npreenchido.insert(0, 'Banana')\nprint('Inset 0: ',preenchido)\n\n# Remover elemento no in\u00edcio\npreenchido.pop(0)\nprint('Pop 0: ',preenchido)\n\n# Adicionar em uma posi\u00e7\u00e3o espec\u00edfica\npreenchido.insert(2, 'Cebola')\nprint('Insert Cebola 2: ',preenchido)\n\n# Remover em uma posi\u00e7\u00e3o espec\u00edfica\npreenchido.pop(2)\nprint('Pop 2: ',preenchido)\n\n# Impress\u00e3o formatada usando join\nprint(\"Formatacao Join:\", \", \".join(preenchido))\n\n# Criar array com sequ\u00eancia de 0 a n\nsequencia = list(range(0, 11))\nprint(sequencia)\n\n# Criar array com valores aleat\u00f3rios\nimport random\naleatorios = [random.randint(1, 10) for _ in range(5)]\nprint(aleatorios)\n\n# Acessar elemento por \u00edndice\nprint(\"Primeiro:\", sequencia[0])\n\n# Percorrer com for-range\nfor item in sequencia:\n    print('Percorrendo: ', item)\n\n# Percorrer com for indexado\nfor i in range(len(sequencia)):\n    print('Index: ', i, sequencia[i])\n\n# Procurar elemento X manualmente\nprocura = \"Cenoura\"\nencontrado = False\nfor item in preenchido:\n    if item == procura:\n        encontrado = True\n\n# Procurar usando fun\u00e7\u00e3o nativa\nprint(\"Tem Cenoura?\", procura in preenchido)\n\n# Filtrar elementos (ex: com letra A)\nfiltrados = [x for x in preenchido if \"a\" in x.lower()]\nprint(filtrados)\n\n# Transformar elementos (ex: mai\u00fasculas)\ntransformados = [x.upper() for x in preenchido]\n\n# Buscar e remover um elemento X\nif \"Batata\" in preenchido:\n    preenchido.remove(\"Batata\")\nprint(preenchido)\n\n# Remover todos os elementos iguais a X\nlista = [1, 2, 2, 3, 2, 4]\nlista = [x for x in lista if x != 2]\nprint(lista)\n\n",
+            "lines": "95"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+2025-11-11 20:23:08, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-11 20:23:09, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0
+2025-11-11 20:26:39, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0, size:71
+2025-11-11 20:27:05, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-11 20:28:30, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-11 20:28:31, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0, size:74
+2025-11-11 20:28:33, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-11 20:59:55, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-11 21:00:18, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-11 21:01:48, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-11 21:01:49, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0, size:89
+2025-11-11 21:01:51, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-11 21:22:49, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-11 21:22:50, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0, size:89
+2025-11-11 21:29:22, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0, size:99
+2025-11-11 21:30:50, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0, size:101
+2025-11-11 21:30:51, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0
+2025-11-11 21:30:51, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:0
+2025-11-11 21:32:01, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:100, size:104
+2025-11-11 21:32:12, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-11 21:33:11, SELF, v:1, k:poo@lapiseira, rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:6, study:300

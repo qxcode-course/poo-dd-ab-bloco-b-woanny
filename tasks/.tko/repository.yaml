@@ -12,7 +12,7 @@ sources:
   type: remote
   branch: master
   cache_path: /workspaces/poo-dd-ab-bloco-b-woanny/tasks/.tko/cache/poo.md
-  cache_timestamp: '2025-10-28 00:32:29'
+  cache_timestamp: '2025-10-28 16:46:36'
   filters:
   - acesso
   - simples
@@ -22,10 +22,8 @@ expanded:
 - poo@bloco_b-modificadores-de-acesso
 tasks:
   poo@motoca: '{rate:100, iagen:pra_tentar_me_ajudar_a_achar_meus_erros, guide:video_da_aula_gravada_pelo_professor,
-
     alone:6, study:180}'
   poo@grafite: '{rate:100, human:amigo, iagen:pra_ajuda_a_entender_oq_errei, alone:7,
-
     study:200}'
   poo@motouber: '{rate:100, human:amigo, iagen:encontrar_meus_erros, alone:7, study:240}'
   poo@notebook: '{rate:100, human:amigo, iagen:gpt_pra_tirar_duvidas, alone:7, study:240}'

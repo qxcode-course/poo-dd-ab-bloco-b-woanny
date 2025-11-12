@@ -1,0 +1,129 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-12_10-52-31",
+            "content": "@@ -264,303 +264,4 @@\n 2%5D))\n-%0A        elif args%5B0%5D == 'enter':%0A            pula_pula.enter()%0A        elif args%5B0%5D == 'show':%0A            pula_pula.show()%0A        elif args%5B0%5D == 'leave':%0A            pula_pula.leave()%0A        elif args%5B0%5D == 'remove':%0A            pula_pula.remove(args%5B1%5D)%0A        else:%0A            print('erro')\n",
+            "lines": "12"
+        },
+        {
+            "label": "2025-11-12_11-02-11",
+            "content": "@@ -1,174 +1,4 @@\n-class Crian%C3%A7a:%0A    def __init__(self, nome: str, idade: int):%0A        self.__nome = nome%0A        self.__idade = idade%0A%0A    def getNome(self):%0A        return self.__nome%0A%0A\n def \n@@ -563,12 +563,4 @@\n ro')\n-%0A%0Amain()\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-11-12_11-04-58",
+            "content": "@@ -166,146 +166,8 @@\n ome%0A\n-    %0A    def getIdade(self):%0A        return self.__idade%0A    %0A    def __str__(self):%0A        return f'%7Bself.__nome%7D:%7Bself.__idade%7D'%0A    %0A%0A\n %0Adef\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-12_11-07-01",
+            "content": "@@ -303,143 +303,8 @@\n    %0A\n-#class Crian%C3%A7a1:%0A#    def __init__(self):%0A#        pass%0A#%0A#    def getNome(self):%0A#        pass%0A#%0A#    def __str__(self):%0A#        pass\n %0A%0Ade\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-11-12_11-08-37",
+            "content": "@@ -440,138 +440,8 @@\n ss%0A%0A\n-class Pula_Pula:%0A    def __init__(self):%0A        self.__esperando: list%5BCrian%C3%A7a%5D = %5B%5D%0A        self.__pulando: list%5BCrian%C3%A7a%5D = %5B%5D%0A%0A\n def \n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-11-12_11-10-34",
+            "content": "@@ -293,16 +293,157 @@\n _idade%7D'\n+%0A    %0A#class Crian%C3%A7a1:%0A#    def __init__(self):%0A#        pass%0A#%0A#    def getNome(self):%0A#        pass%0A#%0A#    def __str__(self):%0A#        pass\n %0A%0Aclass \n",
+            "lines": "53"
+        },
+        {
+            "label": "2025-11-12_11-11-28",
+            "content": "@@ -429,110 +429,8 @@\n %5B%5D%0A%0A\n-    def arrive(self, nome:str, idade: int):%0A        self.__esperando.insert(0, Crian%C3%A7a(nome, idade))%0A%0A\n def \n@@ -1003,282 +1003,4 @@\n in()\n-%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no corra%C3%A7%C3%A3o\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-12_11-16-59",
+            "content": "@@ -531,170 +531,8 @@\n ))%0A%0A\n-    def enter(self):%0A        if len(self.__wainting) == 0:%0A            return%0A        crian%C3%A7a = self.__esperando%0A        self.__pulando.insert(0, Crian%C3%A7a)%0A%0A    %0A%0A\n def \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-12_11-19-57",
+            "content": "@@ -4,17 +4,17 @@\n ss Crian\n-c\n+%C3%A7\n a:%0A    d\n@@ -364,33 +364,33 @@\n ando: list%5BCrian\n-c\n+%C3%A7\n a%5D = %5B%5D%0A        \n@@ -415,17 +415,17 @@\n st%5BCrian\n-c\n+%C3%A7\n a%5D = %5B%5D%0A\n@@ -509,17 +509,17 @@\n 0, Crian\n-c\n+%C3%A7\n a(nome, \n@@ -682,17 +682,17 @@\n rian\n-c\n+%C3%A7\n a)%0A%0A    \n def \n@@ -691,234 +691,8 @@\n     \n-def show(self):%0A        esperando_str = ', '.join(str(crianca) for crianca in self.__esperando)%0A        pulando_str = ', '.join(str(crianca) for crianca in self.__pulando)%0A        print(f'%5B%7Besperando_str%7D%5D =%3E %5B%7Bpulando_str%7D%5D')\n %0A%0Ade\n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-12_21-28-50",
+            "content": "@@ -711,20 +711,29 @@\n         \n-fila\n+esperando_str\n  = ', '.\n@@ -737,32 +737,44 @@\n  '.join(str(\n-x) for x\n+crianca) for crianca\n  in self.__e\n@@ -795,16 +795,23 @@\n     pula\n+ndo_str\n  = ', '.\n@@ -823,16 +823,28 @@\n str(\n-x) for x\n+crianca) for crianca\n  in \n@@ -881,12 +881,21 @@\n f'%5B%7B\n-fila\n+esperando_str\n %7D%5D =\n@@ -902,16 +902,23 @@\n %3E %5B%7Bpula\n+ndo_str\n %7D%5D')%0A%0Ade\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-12_21-30-33",
+            "content": "@@ -687,411 +687,8 @@\n a)%0A%0A\n-    def remove(self, nome: str):%0A        for i, crianca in enumerate(self.__esperando):%0A            if crianca.getNome() == nome:%0A                self.__esperando.pop(i)%0A                return%0A        for i, crianca in enumerate(self.__pulando):%0A            if crianca.getNome() == nome:%0A                self.__pulando.pop(i)%0A                return%0A        print(f'fail: %7Bnome%7D nao esta no pula-pula')%0A%0A\n     \n@@ -863,167 +863,8 @@\n ')%0A%0A\n-    def leave(self):%0A        if len(self.playing) == 0:%0A            return%0A        crianca = self.__pulando.pop()%0A        self.__esperando.insert(0, crianca)%0A%0A\n def \n@@ -1434,8 +1434,285 @@\n %0Amain()%0A\n+%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no corra%C3%A7%C3%A3o\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-12_21-41-39",
+            "content": "@@ -570,25 +570,24 @@\n (self.__\n-esperando\n+wainting\n ) == 0:%0A\n@@ -1266,16 +1266,169 @@\n ')%0A%0A    \n+def leave(self):%0A        if len(self.playing) == 0:%0A            return%0A        crianca = self.__pulando.pop()%0A        self.__esperando.insert(0, crianca)\n %0A%0Adef ma\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-12_21-43-35",
+            "content": "@@ -619,17 +619,17 @@\n    crian\n-c\n+%C3%A7\n a = self\n@@ -674,17 +674,17 @@\n sert(0, \n-c\n+C\n rianca)%0A\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-12_21-44-59",
+            "content": "@@ -644,14 +644,8 @@\n ando\n-.pop()\n %0A   \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-12_21-49-31",
+            "content": "@@ -1277,20 +1277,8 @@\n     \n-def leave if\n %0A%0Ade\n@@ -1854,225 +1854,4 @@\n n()%0A\n-%0A%0Abatatinha quando nasce se esparrama pelo ch%C3%A3o menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0Abatatinha quando nasce se esparrama pelo ch%C3%A3o menininha quando dorme p%C3%B5e a m%C3%A3o no mora%C3%A7%C3%A3o%0Abatatatinha quando nasce se esparra ma \n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-12_21-51-13",
+            "content": "@@ -1864,17 +1864,16 @@\n ain()%0A%0A%0A\n-#\n batatinh\n@@ -1958,9 +1958,8 @@\n %C3%A7%C3%A3o%0A\n-#\n bata\n@@ -2020,31 +2020,71 @@\n ando dorme p%C3%B5e a m%C3%A3o no \n-c\n+m\n ora%C3%A7%C3%A3o\n+%0Abatatatinha quando nasce se esparra ma \n",
+            "lines": "75"
+        },
+        {
+            "label": "2025-11-12_21-53-17",
+            "content": "@@ -1286,28 +1286,11 @@\n eave\n-(self):%0A        pass\n+ if\n %0A%0Ade\n@@ -1859,12 +1859,194 @@\n ')%0A%0Amain()%0A%0A\n+%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-12_21-54-18",
+            "content": "@@ -1302,55 +1302,12 @@\n     \n-if len(self.__pulando) == 0:%0A            return\n+pass\n %0A%0Ade\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-11-12_21-54-58",
+            "content": "@@ -1927,137 +1927,4 @@\n ()%0A%0A\n-#batatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatattatatatatatatatattatatatatatatattatatat\n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-11-12_21-56-04",
+            "content": "@@ -1917,12 +1917,147 @@\n ro')%0A%0Amain()\n+%0A%0A#batatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatatattatatatatatatatattatatatatatatattatatat\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-12_21-56-27",
+            "content": "@@ -1349,49 +1349,8 @@\n turn\n-%0A        crianca = self.__esperando.pop()\n %0A%0Ade\n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-11-12_21-56-54",
+            "content": "@@ -1390,50 +1390,8 @@\n op()\n-%0A        self.__pulando.insert(0, crianca)\n %0A%0Ade\n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-11-12_21-57-29",
+            "content": "@@ -1363,35 +1363,37 @@\n rianca = self.__\n-pul\n+esper\n ando.pop()%0A     \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-12_21-59-05",
+            "content": "@@ -1392,37 +1392,35 @@\n %0A        self.__\n-esper\n+pul\n ando.insert(0, c\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-12_21-59-25",
+            "content": "class Crianca:\n    def __init__(self, nome: str, idade: int):\n        self.__nome = nome\n        self.__idade = idade\n\n    def getNome(self):\n        return self.__nome\n    \n    def getIdade(self):\n        return self.__idade\n    \n    def __str__(self):\n        return f'{self.__nome}:{self.__idade}'\n\nclass Pula_Pula:\n    def __init__(self):\n        self.__esperando: list[Crianca] = []\n        self.__pulando: list[Crianca] = []\n\n    def arrive(self, nome:str, idade: int):\n        self.__esperando.insert(0, Crianca(nome, idade))\n\n    def enter(self):\n        if len(self.__esperando) == 0:\n            return\n        crianca = self.__esperando.pop()\n        self.__pulando.insert(0, crianca)\n\n    def remove(self, nome: str):\n        for i, crianca in enumerate(self.__esperando):\n            if crianca.getNome() == nome:\n                self.__esperando.pop(i)\n                return\n        for i, crianca in enumerate(self.__pulando):\n            if crianca.getNome() == nome:\n                self.__pulando.pop(i)\n                return\n        print(f'fail: {nome} nao esta no pula-pula')\n\n    def show(self):\n        fila = ', '.join(str(x) for x in self.__esperando)\n        pula = ', '.join(str(x) for x in self.__pulando)\n        print(f'[{fila}] => [{pula}]')\n\n    def leave(self):\n        if len(self.__pulando) == 0:\n            return\n        crianca = self.__pulando.pop()\n        self.__esperando.insert(0, crianca)\n\ndef main():\n    pula_pula = Pula_Pula()\n\n    while True:\n        line = input()\n        print('$' + line)\n        args = line.split()\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'arrive':\n            pula_pula.arrive(args[1], int(args[2]))\n        elif args[0] == 'enter':\n            pula_pula.enter()\n        elif args[0] == 'show':\n            pula_pula.show()\n        elif args[0] == 'leave':\n            pula_pula.leave()\n        elif args[0] == 'remove':\n            pula_pula.remove(args[1])\n        else:\n            print('erro')\n\nmain()",
+            "lines": "74"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+2025-11-12 10:41:15, MOVE, v:1, k:poo@pula-pula, mode:DOWN
+2025-11-12 10:51:56, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-12 10:51:58, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:100, size:106
+2025-11-12 10:52:00, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-12 10:52:29, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 10:52:31, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:12
+2025-11-12 10:52:36, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 10:57:19, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 10:57:21, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0
+2025-11-12 10:57:22, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 11:02:10, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:02:11, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:22
+2025-11-12 11:02:12, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 11:04:57, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:04:58, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:32
+2025-11-12 11:05:01, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 11:07:01, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:07:01, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:40
+2025-11-12 11:07:03, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 11:08:36, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:08:37, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:48
+2025-11-12 11:08:40, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 11:10:33, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:10:34, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:53
+2025-11-12 11:10:37, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 11:11:27, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:11:28, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:43
+2025-11-12 11:11:35, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 11:16:58, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:16:59, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:50
+2025-11-12 11:17:12, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 11:19:55, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 11:19:57, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:58
+2025-11-12 11:20:03, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:28:49, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:28:50, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:61
+2025-11-12 21:30:33, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:61
+2025-11-12 21:30:49, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:37:03, MOVE, v:1, k:poo@lapiseira, mode:PICK
+2025-11-12 21:37:04, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:100
+2025-11-12 21:40:24, EXEC, v:1, k:poo@lapiseira, mode:FULL, rate:100
+2025-11-12 21:40:25, MOVE, v:1, k:poo@lapiseira, mode:BACK
+2025-11-12 21:41:10, SELF, v:1, k:poo@pula-pula, rate:10, human:amigo, iagen:tirar_duvidas, other:foruns, alone:5, study:120
+2025-11-12 21:41:27, SELF, v:1, k:poo@pula-pula, rate:10, human:amigo, iagen:tirar_duvidas, other:foruns, alone:5, study:120
+2025-11-12 21:41:37, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:41:39, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:74
+2025-11-12 21:41:54, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:43:35, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:43:35, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:70
+2025-11-12 21:44:59, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10, size:70
+2025-11-12 21:46:25, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10
+2025-11-12 21:47:04, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:47:05, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10
+2025-11-12 21:48:53, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:10
+2025-11-12 21:49:31, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:30, size:70
+2025-11-12 21:49:59, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:51:13, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:51:13, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:75
+2025-11-12 21:51:19, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:53:16, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:53:17, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:0, size:74
+2025-11-12 21:54:17, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:54:18, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50, size:72
+2025-11-12 21:54:24, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:54:57, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:54:58, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50, size:73
+2025-11-12 21:55:06, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:56:03, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:56:04, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50, size:74
+2025-11-12 21:56:06, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:56:26, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:56:27, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50, size:72
+2025-11-12 21:56:28, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:56:53, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:56:54, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50, size:73
+2025-11-12 21:56:58, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:57:28, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:57:29, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50, size:74
+2025-11-12 21:57:47, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:58:13, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:58:14, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50
+2025-11-12 21:59:05, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:50, size:74
+2025-11-12 21:59:11, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:59:24, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 21:59:25, EXEC, v:1, k:poo@pula-pula, mode:FULL, rate:100, size:74
+2025-11-12 21:59:38, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 21:59:56, SELF, v:1, k:poo@lapiseira, rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:7, study:300
+2025-11-12 21:59:57, MOVE, v:1, k:poo@pula-pula, mode:PICK
+2025-11-12 22:00:01, MOVE, v:1, k:poo@pula-pula, mode:BACK
+2025-11-12 22:00:07, SELF, v:1, k:poo@pula-pula, rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:6, study:120

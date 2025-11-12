@@ -2,13 +2,17 @@ version: '0.2'
 sources:
 - database: local
   link: ''
+  type: local
+  branch: master
   cache_path: ''
   cache_timestamp: ''
   filters: null
 - database: poo
   link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
+  type: remote
+  branch: master
   cache_path: /workspaces/poo-dd-ab-bloco-b-woanny/tasks/.tko/cache/poo.md
-  cache_timestamp: '2025-10-28 00:32:29'
+  cache_timestamp: '2025-10-28 16:46:36'
   filters:
   - acesso
   - simples

@@ -1,0 +1,64 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-04_17-36-34",
+            "content": "@@ -1556,16 +1556,17 @@\n pessoas%7D\n+ \n %5D%5Cn%22%0A   \n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-11-04_17-37-36",
+            "content": "@@ -59,26 +59,24 @@\n        self.\n-__\n name = name%0A\n@@ -80,59 +80,8 @@\n me%0A%0A\n-    def getNome(self):%0A        return self.__name%0A%0A\n     \n@@ -126,18 +126,16 @@\n rn self.\n-__\n name%0A   \n@@ -2321,34 +2321,16 @@\n alido%22)%0A\n-            break%0A\n     %0Amai\n",
+            "lines": "79"
+        },
+        {
+            "label": "2025-11-10_02-17-17",
+            "content": "@@ -305,28 +305,9 @@\n  = %5B\n-None%5D * counter_size\n+%5D\n %0A   \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-10_02-18-27",
+            "content": "@@ -301,17 +301,36 @@\n one%5D = %5B\n-%5D\n+None%5D * counter_size\n %0A       \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-10_02-18-46",
+            "content": "@@ -305,28 +305,9 @@\n  = %5B\n-None%5D * counter_size\n+%5D\n %0A   \n@@ -1134,33 +1134,25 @@\n int(\n-'fail: caixa inexistente'\n+%22Indice invalido%22\n )%0A  \n@@ -1225,28 +1225,20 @@\n int(\n-'fail: sem clientes'\n+%22Fila vazia%22\n )%0A  \n@@ -1320,16 +1320,10 @@\n int(\n-'fail: c\n+%22C\n aixa\n@@ -1334,9 +1334,9 @@\n pado\n-'\n+%22\n )%0A  \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-10_02-22-47",
+            "content": "@@ -1470,74 +1470,8 @@\n g%5B0%5D\n-%0A%0A    def finish(self, index: int):%0A        if index %3C 0 index %3E= \n %0A   \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-10_02-24-25",
+            "content": "@@ -1515,35 +1515,32 @@\n    if index %3C 0 \n-or \n index %3E= len(sel\n@@ -1536,294 +1536,8 @@\n  %3E= \n-len(self.counters):%0A            print('fail: caixa inexistente')%0A            return None%0A        if self.counters%5Bindex%5D is None:%0A            print('fail: caixa vazio')%0A            return None%0A        person = self.counters%5Bindex%5D%0A        self.counters%5Bindex%5D = None%0A        return None\n %0A   \n",
+            "lines": "86"
+        },
+        {
+            "label": "2025-11-10_02-27-26",
+            "content": "@@ -1890,29 +1890,38 @@\n     \n-caix\n+pesso\n as = \n-', '. \n+%22, %22.\n join(%5B\n+(%22-----%22 \n if x\n@@ -1936,24 +1936,25 @@\n  else str(x)\n+)\n  for x in se\n@@ -1967,11 +1967,228 @@\n nter\n-s\n %5D)\n+%0A        saida: str = f%22Caixas: %5B%7Bpessoas%7D%5D%5Cn%22%0A        # for person in self.counter:%0A        #     if person is None:%0A        #         saida += %22----- %22%0A        #     else:%0A        #         saida += str(person) + %22 %22\n %0A   \n@@ -2202,15 +2202,18 @@\n pera\n+ndo\n  = \n-', '\n+%22, %22\n .joi\n@@ -2258,44 +2258,27 @@\n     \n-return f'Caixas: %5B%7Bcaixas%7D%5Cn\n+saida += f%22\n Espera: \n %7Besp\n@@ -2277,18 +2277,43 @@\n ra: \n+%5B\n %7Bespera\n-%7D%5D'\n+ndo%7D%5D%22%0A        return saida\n %0A%0A%0Ad\n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-11-10_02-31-20",
+            "content": "@@ -2165,11 +2165,11 @@\n int(\n-'$'\n+%22$%22\n  + l\n@@ -2199,18 +2199,20 @@\n e.split(\n+%22 %22\n )\n-%0A\n %0A       \n@@ -2230,13 +2230,13 @@\n  == \n-'end'\n+%22end%22\n :%0A  \n@@ -2279,14 +2279,14 @@\n  == \n-'\n+%22\n show\n-'\n+%22\n :%0A  \n@@ -2337,14 +2337,14 @@\n  == \n-'\n+%22\n init\n-'\n+%22\n :%0A  \n@@ -2357,183 +2357,58 @@\n     \n-market = Market(int(args%5B1%5D))%0A        elif args%5B0%5D == 'arrive':%0A            market.arrive(Person(args%5B1%5D))%0A        elif args%5B0%5D == 'call':%0A            market.call(int(args%5B1%5D)\n+qtd = int(args%5B1%5D)%0A            market = Market(qtd\n )%0A  \n@@ -2433,16 +2433,16 @@\n  == \n-'finish'\n+%22insert%22\n :%0A  \n@@ -2462,18 +2462,21 @@\n ket.\n-finish(int\n+arrive(Person\n (arg\n@@ -2514,23 +2514,17 @@\n   print(\n-'fail: \n+%22\n comando \n@@ -2531,17 +2531,17 @@\n invalido\n-'\n+%22\n )%0A      \n",
+            "lines": "87"
+        },
+        {
+            "label": "2025-11-10_02-34-26",
+            "content": "@@ -59,24 +59,26 @@\n        self.\n+__\n name = name%0A\n@@ -78,16 +78,67 @@\n = name%0A%0A\n+    def getNome(self):%0A        return self.__name%0A%0A\n     def \n@@ -179,16 +179,18 @@\n rn self.\n+__\n name%0A   \n@@ -191,17 +191,16 @@\n me%0A    %0A\n-%0A\n class Ma\n@@ -305,16 +305,40 @@\n  = %5BNone\n+%5D * counter_size%0A       \n  for _ i\n@@ -358,17 +358,55 @@\n er_size)\n-%5D\n+:%0A            self.counter.append(None)\n %0A       \n@@ -514,16 +514,549 @@\n erson)%0A%0A\n+    def leave(self, index: int) -%3E Person %7C None: %0A        if index %3C 0 or index %3E= len(self.counter):%0A            print(%22Indice invalido%22)%0A            return None%0A        if self.counter%5Bindex%5D is None:%0A            print(%22Caixa vazio%22)%0A            return None%0A        aux = self.counter%5Bindex%5D%0A        self.counter%5Bindex%5D = None%0A        return aux%0A    %0A    def give_up(self, name: str):%0A        for i, person in enumerate(self.waiting):%0A            if person.name == name:%0A                del self.waiting%5Bi%5D%0A                break%0A%0A\n     def \n@@ -1439,15 +1439,39 @@\n ting\n-.pop(0)\n+%5B0%5D%0A        del self.waiting%5B0%5D\n %0A%0A  \n@@ -1500,35 +1500,17 @@\n ex: int)\n- -%3E Person %7C None: \n+:\n %0A       \n@@ -1543,32 +1543,33 @@\n len(self.counter\n+s\n ):%0A            p\n@@ -1639,32 +1639,33 @@\n  if self.counter\n+s\n %5Bindex%5D is None:\n@@ -1728,35 +1728,38 @@\n rn None%0A        \n-aux\n+person\n  = self.counter%5B\n@@ -1749,32 +1749,33 @@\n n = self.counter\n+s\n %5Bindex%5D%0A        \n@@ -1778,32 +1778,33 @@\n     self.counter\n+s\n %5Bindex%5D = None%0A \n@@ -1809,35 +1809,36 @@\n %0A        return \n-aux\n+None\n %0A    %0A    def __\n@@ -1848,32 +1848,53 @@\n __(self) -%3E str:\n+ # list comprehension\n %0A        caixas \n@@ -1904,23 +1904,15 @@\n , '.\n+ \n join(%5B\n-('-----' \n if x\n@@ -1931,17 +1931,16 @@\n e str(x)\n-)\n  for x i\n@@ -1953,16 +1953,17 @@\n .counter\n+s\n %5D)%0A     \n@@ -2050,17 +2050,16 @@\n %7Bcaixas%7D\n-%5D\n %5CnEspera\n@@ -2060,17 +2060,16 @@\n Espera: \n-%5B\n %7Bespera%7D\n@@ -2203,12 +2203,10 @@\n lit(\n-' '\n )\n+%0A\n %0A   \n@@ -2214,21 +2214,18 @@\n     \n-cmd =\n+if\n  args%5B0%5D\n %0A%0A  \n@@ -2224,24 +2224,8 @@\n s%5B0%5D\n-%0A%0A        if cmd\n  == \n@@ -2258,27 +2258,31 @@\n        elif \n-cmd\n+args%5B0%5D\n  == 'show':%0A\n@@ -2316,27 +2316,31 @@\n        elif \n-cmd\n+args%5B0%5D\n  == 'init':%0A\n@@ -2343,39 +2343,8 @@\n t':%0A\n-            qtd = int(args%5B1%5D)%0A\n     \n@@ -2371,11 +2371,20 @@\n ket(\n-qtd\n+int(args%5B1%5D)\n )%0A  \n@@ -2390,27 +2390,31 @@\n        elif \n-cmd\n+args%5B0%5D\n  == 'arrive'\n@@ -2467,27 +2467,31 @@\n        elif \n-cmd\n+args%5B0%5D\n  == 'call':%0A\n@@ -2545,11 +2545,15 @@\n lif \n-cmd\n+args%5B0%5D\n  == \n@@ -2656,24 +2656,42 @@\n  invalido')%0A\n+            break%0A\n     %0Amain()%0A\n@@ -2689,9 +2689,8 @@\n  %0Amain()\n-%0A\n",
+            "lines": "91"
+        },
+        {
+            "label": "2025-11-10_02-36-20",
+            "content": "@@ -1530,25 +1530,24 @@\n it(' ')%0A\n-%0A\n         \n if args%5B\n@@ -1538,26 +1538,29 @@\n         \n-if\n+cmd =\n  args%5B0%5D\n  == 'end\n@@ -1547,24 +1547,40 @@\n md = args%5B0%5D\n+%0A%0A        if cmd\n  == 'end':%0A \n@@ -1605,31 +1605,27 @@\n        elif \n-args%5B0%5D\n+cmd\n  == 'show':%0A\n@@ -1659,31 +1659,27 @@\n        elif \n-args%5B0%5D\n+cmd\n  == 'init':%0A\n@@ -1751,31 +1751,27 @@\n        elif \n-args%5B0%5D\n+cmd\n  == 'arrive'\n@@ -1824,31 +1824,27 @@\n        elif \n-args%5B0%5D\n+cmd\n  == 'call':%0A\n@@ -1894,23 +1894,19 @@\n    elif \n-args%5B0%5D\n+cmd\n  == 'fin\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-10_20-02-54",
+            "content": "class Person:\n    def __init__(self, name: str) -> None:\n        self.name = name\n\n    def __str__(self) -> str:\n        return self.name\n    \n\nclass Market:\n    def __init__(self, counter_size: int) -> None:\n        self.counter: list[Person | None] = [None for _ in range(counter_size)]\n        self.waiting: list[Person] = []\n\n    def arrive(self, person: Person):\n        self.waiting.append(person)\n\n    def call(self, index: int):\n        if index < 0 or index >= len(self.counter):\n            print('fail: caixa inexistente')\n            return\n        if len(self.waiting) == 0:\n            print('fail: sem clientes')\n            return\n        if self.counter[index] is not None:\n            print('fail: caixa ocupado')\n            return\n        self.counter[index] = self.waiting.pop(0)\n\n    def finish(self, index: int) -> Person | None: \n        if index < 0 or index >= len(self.counter):\n            print('fail: caixa inexistente')\n            return None\n        if self.counter[index] is None:\n            print('fail: caixa vazio')\n            return None\n        aux = self.counter[index]\n        self.counter[index] = None\n        return aux\n    \n    def __str__(self) -> str:\n        caixas = ', '.join([('-----' if x is None else str(x)) for x in self.counter])\n        espera = ', '.join([str(x) for x in self.waiting])\n        return f'Caixas: [{caixas}]\\nEspera: [{espera}]'\n\n\ndef main():\n    market = Market(0)\n    while True:\n        line = input()\n        print('$' + line)\n        args = line.split(' ')\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'show':\n            print(market)\n        elif args[0] == 'init':\n            qtd = int(args[1])\n            market = Market(qtd)\n        elif args[0] == 'arrive':\n            market.arrive(Person(args[1]))\n        elif args[0] == 'call':\n            market.call(int(args[1]))\n        elif args[0] == 'finish':\n            market.finish(int(args[1]))\n        else:\n            print('fail: comando invalido')\n    \nmain()\n",
+            "lines": "69"
+        }
+    ]
+}

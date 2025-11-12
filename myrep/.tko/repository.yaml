@@ -2,16 +2,35 @@ version: '0.2'
 sources:
 - database: local
   link: ''
+  type: local
+  branch: master
   cache_path: ''
   cache_timestamp: ''
   filters: null
-expanded: []
-tasks: {}
+- database: poo
+  link: /workspaces/poo-dd-ab-bloco-b-woanny/myrep/.tko/cache/poo/Readme.md
+  type: clone
+  branch: master
+  cache_path: /workspaces/poo-dd-ab-bloco-b-woanny/myrep/.tko/cache/poo/Readme.md
+  cache_timestamp: '2025-11-12 21:23:43'
+  filters:
+  - listas
+expanded:
+- poo@campanha-principal
+- poo@bloco_c-listas
+tasks:
+  poo@array: '{rate:100, other:foruns_e_sites_q_estavam_ensinando, alone:9, study:130}'
+  poo@budega: '{rate:100, iagen:gpt_tirar_duvidas, guide:aula, other:foruns, alone:6,
+    study:100}'
+  poo@lapiseira: '{rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:7,
+    study:300}'
+  poo@pula-pula: '{rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:6,
+    study:120}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
 lang: py
-selected: ''
+selected: poo@pula-pula

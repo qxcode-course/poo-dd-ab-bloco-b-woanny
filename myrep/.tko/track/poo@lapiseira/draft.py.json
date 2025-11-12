@@ -1,0 +1,144 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-10_02-37-53",
+            "content": "@@ -1,269 +0,0 @@\n-class Lead:%0A    def __init__(self, calibre: float, dureza: str, tamanho: int):%0A        self.calibre = calibre%0A        self.dureza = dureza%0A        self.tamanho = tamanho%0A%0A    def usagePerSheet(self) -%3E int:%0A        gasto = %7B%0A            'HB' : 1,%0A            %0A        %7D\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-10_14-52-48",
+            "content": "@@ -256,100 +256,14 @@\n     \n-'2B' : 2,%0A            '4B' : 3,%0A            '6B' : 6%0A        %7D%0A        return gasto%5Bself.dureza%5D\n+%0A        %7D\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-11-10_14-54-08",
+            "content": "@@ -352,90 +352,4 @@\n eza%5D\n-%0A%0A    def __str__(self):%0A        return f'%7Bself.calibre%7D:%7Bself.dureza%7D:%7Bself.tamanho%7D'\n",
+            "lines": "14"
+        },
+        {
+            "label": "2025-11-10_14-58-55",
+            "content": "@@ -391,20 +391,51 @@\n turn f'%7Bself.calibre\n+%7D:%7Bself.dureza%7D:%7Bself.tamanho%7D'\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-11-10_14-59-26",
+            "content": "@@ -407,81 +407,4 @@\n ibre\n-%7D:%7Bself.dureza%7D:%7Bself.tamanho%7D'%0A    %0A    class Pencil:%0A        def __init__()\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-11-10_15-00-32",
+            "content": "@@ -483,103 +483,5 @@\n t__(\n-self, calibre: float):%0A            self.calibre = calibre%0A            self.bico: Lead %7C None = None\n+)\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-11-10_15-01-57",
+            "content": "@@ -582,45 +582,4 @@\n None\n-%0A            self.tambor: list%5BLead%5D = %5B%5D\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-11-10_15-02-53",
+            "content": "@@ -1,649 +1,87 @@\n-class Lead:%0A    def __init__(self, calibre: float, dureza: str, tamanho: int):%0A        self.calibre = calibre%0A        self.dureza = dureza%0A        self.tamanho = tamanho%0A%0A    def usagePerSheet(self) -%3E int:%0A        gasto = %7B%0A            'HB' : 1,%0A            '2B' : 2,%0A            '4B' : 3,%0A            '6B' : 6%0A        %7D%0A        return gasto%5Bself.dureza%5D%0A%0A    def __str__(self):%0A        return f'%7Bself.calibre%7D:%7Bself.dureza%7D:%7Bself.tamanho%7D'%0A    %0Aclass Lapiseira:%0A    def __init__(self, calibre: float):%0A        self.calibre = calibre%0A        self.bico: Lead %7C None = None%0A        self.tambor: list%5BLead%5D = %5B%5D%0A%0A    def insert(self, lead: Lead):%0A\n+@@ -623,176 +623,4 @@%0A = %255B%255D%0A-%250A%250A        def insert(self, lead: Lead):%250A    \n     \n@@ -116,17 +116,23 @@\n calibre:\n-%0A\n+%250A    \n         \n@@ -170,17 +170,23 @@\n ativel')\n-%0A\n+%250A    \n         \n@@ -199,17 +199,19 @@\n turn\n-%0A\n+%250A\n         \n self\n@@ -210,132 +210,9 @@\n     \n-self.tambor.append(Lead)%0A%0Alapiseira = Lapiseira(0.5)%0Alapiseira.insert(Lead(0.5, 'HB', 60))%0Alapiseira.insert(Lead(0.7, '2B', 50))\n+    %0A\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-11-10_15-10-06",
+            "content": "@@ -818,8 +818,72 @@\n iseira.i\n+nsert(Lead(0.5, 'HB', 60))%0Alapiseira.insert(Lead(0.7, '2B', 50))\n",
+            "lines": "33"
+        },
+        {
+            "label": "2025-11-10_15-11-52",
+            "content": "@@ -780,8 +780,46 @@\n (Lead)%0A%0A\n+lapiseira = Lapiseira(0.5)%0Alapiseira.i\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-11-10_15-12-52",
+            "content": "@@ -784,221 +784,4 @@\n d)%0A%0A\n-    def pull(self):%0A        if self.bico is not None:%0A            print('fail: ja existe grafite no bico')%0A            return%0A        if len(self.tambor) == 0:%0A            return%0A        self.bico = self.tambor.pop(0)\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-11-10_15-16-05",
+            "content": "@@ -1001,101 +1001,4 @@\n p(0)\n-%0A%0A    def remove(self):%0A        if self.bico is None:%0A            return%0A        self.bico = None\n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-10_19-52-25",
+            "content": "@@ -1098,35 +1098,4 @@\n None\n-%0A%0A    def white(self):%0A        \n",
+            "lines": "42"
+        },
+        {
+            "label": "2025-11-10_19-53-30",
+            "content": "@@ -1129,148 +1129,4 @@\n     \n-if self.bico is None:%0A            print('fail: nao existe grafite no bico')%0A            return%0A        gasto = self.bico.usagePerSheet%0A%0A        \n",
+            "lines": "45"
+        },
+        {
+            "label": "2025-11-10_19-56-57",
+            "content": "@@ -1273,98 +1273,4 @@\n     \n-if self.bico.tamanho %3C= 10:%0A            print('fail: tamanho insuficiente')%0A            return\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-11-10_19-58-52",
+            "content": "@@ -1367,144 +1367,4 @@\n turn\n-%0A        %0Adef main():%0A    market = Market(0)%0A    while True:%0A        line = input()%0A        print('$' + line)%0A        args = line.split(' ')\n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-11-10_20-05-55",
+            "content": "@@ -1393,30 +1393,26 @@\n     \n-lapiseira = Lapiseira%0A\n+market = Market(0)\n %0A   \n@@ -1473,16 +1473,16 @@\n + line)%0A\n+\n         \n@@ -1507,112 +1507,4 @@\n ' ')\n-%0A%0A        if args%5B0%5D == 'end':%0A            break%0A        if args%5B0%5D == 'init':%0A            calibre = float()\n",
+            "lines": "59"
+        },
+        {
+            "label": "2025-11-10_20-09-46",
+            "content": "@@ -1410,30 +1410,16 @@\n apiseira\n- %7C None = None\n %0A%0A    wh\n@@ -1556,34 +1556,32 @@\n   break%0A        \n-el\n if args%5B0%5D == 'i\n@@ -1602,105 +1602,21 @@\n     \n-lapiseira = Lapiseira(float(args%5B1%5D))%0A        elif args%5B0%5D == 'show':%0A            lapiseira.show()   \n+calibre = float()\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-11-10_20-13-49",
+            "content": "@@ -1410,16 +1410,30 @@\n apiseira\n+ %7C None = None\n %0A%0A    wh\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-10_20-14-07",
+            "content": "@@ -1702,165 +1702,7 @@\n ow()\n-%0A\n    \n-     elif args%5B0%5D == 'insert':%0A            lapiseira.insert(float(args%5B1%5D), args%5B2, int(args%5B3%5D)%5D)%0A        elif args%5B0%5D == 'pull':%0A            lapiseira.pull\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-11_20-26-39",
+            "content": "@@ -1863,80 +1863,4 @@\n pull\n-()%0A        elif args%5B0%5D == 'remove':%0A            lapiseira.remove()%0A        \n",
+            "lines": "71"
+        },
+        {
+            "label": "2025-11-11_20-28-31",
+            "content": "@@ -81,26 +81,24 @@\n        self.\n-__\n calibre = ca\n@@ -112,26 +112,24 @@\n        self.\n-__\n dureza = dur\n@@ -137,34 +137,32 @@\n za%0A        self.\n-__\n tamanho = tamanh\n@@ -168,253 +168,8 @@\n ho%0A%0A\n-    def getCalibre(self):%0A        return self.__calibre%0A    %0A    def getDureza(self):%0A        return self.__dureza%0A    %0A    def getTamanho(self):%0A        return sel.__tamanho%0A    %0A    def setTamanho(self, valor):%0A        self.__tamanho = valor%0A%0A\n     \n@@ -341,18 +341,16 @@\n to%5Bself.\n-__\n dureza%5D%0A\n@@ -1410,30 +1410,16 @@\n apiseira\n- %7C None = None\n %0A%0A    wh\n@@ -1927,24 +1927,24 @@\n emove()%0A\n+\n         \n elif lap\n@@ -1939,65 +1939,4 @@\n     \n-elif lapiseira.write():%0A            lapiseira.write()%0A%0Amain()\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-11-11_21-01-49",
+            "content": "@@ -330,25 +330,24 @@\n   return sel\n-f\n .__tamanho%0A \n@@ -645,26 +645,24 @@\n urn f'%7Bself.\n-__\n calibre%7D:%7Bse\n@@ -660,26 +660,24 @@\n ibre%7D:%7Bself.\n-__\n dureza%7D:%7Bsel\n@@ -674,26 +674,24 @@\n reza%7D:%7Bself.\n-__\n tamanho%7D'%0A  \n@@ -755,34 +755,32 @@\n ):%0A        self.\n-__\n calibre = calibr\n@@ -790,26 +790,24 @@\n        self.\n-__\n bico: Lead %7C\n@@ -828,26 +828,24 @@\n        self.\n-__\n tambor: list\n@@ -882,48 +882,18 @@\n lf, \n-calibre: float, dureza: str, tamanho:int\n+lead: Lead\n ):%0A \n@@ -902,16 +902,21 @@\n      if \n+lead.\n calibre \n@@ -919,26 +919,24 @@\n bre != self.\n-__\n calibre:%0A   \n@@ -966,17 +966,17 @@\n alibre i\n-m\n+n\n compativ\n@@ -1008,26 +1008,24 @@\n        self.\n-__\n tambor.appen\n@@ -1034,34 +1034,8 @@\n Lead\n-(calibre, dureza, tamanho)\n )%0A%0A \n@@ -1069,18 +1069,16 @@\n if self.\n-__\n bico is \n@@ -1179,18 +1179,16 @@\n en(self.\n-__\n tambor) \n",
+            "lines": "89"
+        },
+        {
+            "label": "2025-11-11_21-22-50",
+            "content": "@@ -1293,26 +1293,24 @@\n        self.\n-__\n bico = self.\n@@ -1305,26 +1305,24 @@\n bico = self.\n-__\n tambor.pop(0\n@@ -1354,34 +1354,32 @@\n         if self.\n-__\n bico is None:%0A  \n@@ -1404,26 +1404,24 @@\n        self.\n-__\n bico = None%0A\n@@ -1450,34 +1450,32 @@\n         if self.\n-__\n bico is None:%0A  \n@@ -1598,35 +1598,30 @@\n     if self.\n-__\n bico.\n-getT\n+t\n amanho %3C= 10\n@@ -1702,335 +1702,8 @@\n    %0A\n-        if self.__bico.getTamanho() - gasto %3C 10:%0A            print('fail: folha incompleta')%0A            self.__bico.setTamanho(10)%0A            return%0A        %0A        self.__bico.setTamanho(self.__bico.getTamanho() - gasto)%0A%0A        def show(self):%0A            bico_str = f'%5B%7Bself.__bico%7D%5D' if self.__bico else '%5B%5D'%0A        %0A\n def \n",
+            "lines": "89"
+        },
+        {
+            "label": "2025-11-11_21-29-22",
+            "content": "@@ -2035,166 +2035,8 @@\n %5B%5D'%0A\n-            tambor_str = ''.join(%5Bf'%5B%7Bx%7D%5D' for x in self.__tambor%5D)%0A            print(f'calibre: %7Bself.__calibre%7D, bico: %7Bbico_str%7D, tambor: %3C%7Btambor_str%7D%3E')%0A\n     \n@@ -2465,17 +2465,16 @@\n , args%5B2\n-%5D\n , int(ar\n@@ -2479,16 +2479,17 @@\n args%5B3%5D)\n+%5D\n )%0A      \n@@ -2625,26 +2625,25 @@\n lif \n-args%5B0%5D == '\n+lapiseira.\n write\n-'\n+()\n :%0A  \n",
+            "lines": "99"
+        },
+        {
+            "label": "2025-11-11_21-30-50",
+            "content": "@@ -486,16 +486,17 @@\n     'HB'\n+ \n : 1,%0A   \n@@ -508,16 +508,17 @@\n     '2B'\n+ \n : 2,%0A   \n@@ -534,11 +534,12 @@\n '4B'\n+ \n : \n-4\n+3\n ,%0A  \n@@ -552,16 +552,17 @@\n     '6B'\n+ \n : 6%0A    \n@@ -695,17 +695,20 @@\n manho%7D'%0A\n-%0A\n+    \n %0Aclass L\n@@ -1010,16 +1010,16 @@\n re i\n-n\n+m\n compat\n-%C3%AD\n+i\n vel'\n@@ -1438,17 +1438,17 @@\n    def w\n-r\n+h\n ite(self\n@@ -1555,17 +1555,16 @@\n  return%0A\n-%0A\n         \n@@ -1572,26 +1572,24 @@\n asto = self.\n-__\n bico.usagePe\n@@ -1594,18 +1594,16 @@\n PerSheet\n-()\n %0A%0A      \n@@ -1629,18 +1629,16 @@\n tTamanho\n-()\n  %3C= 10:%0A\n@@ -1940,16 +1940,20 @@\n gasto)%0A%0A\n+    \n     def \n@@ -1956,32 +1956,36 @@\n def show(self):%0A\n+    \n         bico_str\n@@ -2039,16 +2039,20 @@\n         \n+   \n+ \n tambor_s\n@@ -2099,16 +2099,20 @@\n ambor%5D)%0A\n+    \n         \n@@ -2189,17 +2189,24 @@\n str%7D%3E')%0A\n-%0A\n+        \n %0Adef mai\n@@ -2225,16 +2225,35 @@\n iseira =\n+ Lapiseira %7C None =\n  None%0A%0A \n@@ -2342,16 +2342,19 @@\n e.split(\n+' '\n )%0A%0A     \n@@ -2836,9 +2836,8 @@\n %0A%0Amain()\n-%0A\n",
+            "lines": "101"
+        },
+        {
+            "label": "2025-11-11_21-32-01",
+            "content": "@@ -2787,48 +2787,8 @@\n te()\n-%0A        else:%0A            print('erro')\n %0A%0Ama\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-12_10-51-58",
+            "content": "class Lead:\n    def __init__(self, calibre: float, dureza: str, tamanho: int):\n        self.__calibre = calibre\n        self.__dureza = dureza\n        self.__tamanho = tamanho\n\n    def getCalibre(self):\n        return self.__calibre\n    \n    def getDureza(self):\n        return self.__dureza\n    \n    def getTamanho(self):\n        return self.__tamanho\n    \n    def setTamanho(self, valor):\n        self.__tamanho = valor\n\n    def usagePerSheet(self) -> int:\n        gasto = {\n            'HB': 1,\n            '2B': 2,\n            '4B': 4,\n            '6B': 6\n        }\n        return gasto[self.__dureza]\n\n    def __str__(self):\n        return f'{self.__calibre}:{self.__dureza}:{self.__tamanho}'\n\n\nclass Lapiseira:\n    def __init__(self, calibre: float):\n        self.__calibre = calibre\n        self.__bico: Lead | None = None\n        self.__tambor: list[Lead] = []\n\n    def insert(self, calibre: float, dureza: str, tamanho:int):\n        if calibre != self.__calibre:\n            print('fail: calibre incompat\u00edvel')\n            return\n        self.__tambor.append(Lead(calibre, dureza, tamanho))\n\n    def pull(self):\n        if self.__bico is not None:\n            print('fail: ja existe grafite no bico')\n            return\n        if len(self.__tambor) == 0:\n            return\n        self.__bico = self.__tambor.pop(0)\n\n    def remove(self):\n        if self.__bico is None:\n            return\n        self.__bico = None\n\n    def write(self):\n        if self.__bico is None:\n            print('fail: nao existe grafite no bico')\n            return\n\n        gasto = self.__bico.usagePerSheet()\n\n        if self.__bico.getTamanho() <= 10:\n            print('fail: tamanho insuficiente')\n            return\n        \n        if self.__bico.getTamanho() - gasto < 10:\n            print('fail: folha incompleta')\n            self.__bico.setTamanho(10)\n            return\n        \n        self.__bico.setTamanho(self.__bico.getTamanho() - gasto)\n\n    def show(self):\n        bico_str = f'[{self.__bico}]' if self.__bico else '[]'\n        tambor_str = ''.join([f'[{x}]' for x in self.__tambor])\n        print(f'calibre: {self.__calibre}, bico: {bico_str}, tambor: <{tambor_str}>')\n\n\ndef main():\n    lapiseira = None\n\n    while True:\n        line = input()\n        print('$' + line)\n        args = line.split()\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'init':\n            lapiseira = Lapiseira(float(args[1]))\n        elif args[0] == 'show':\n            lapiseira.show()\n        elif args[0] == 'insert':\n            lapiseira.insert(float(args[1]), args[2], int(args[3]))\n        elif args[0] == 'pull':\n            lapiseira.pull()\n        elif args[0] == 'remove':\n            lapiseira.remove()\n        elif args[0] == 'write':\n            lapiseira.write()\n        else:\n            print('erro')\n\nmain()\n",
+            "lines": "106"
+        }
+    ]
+}
