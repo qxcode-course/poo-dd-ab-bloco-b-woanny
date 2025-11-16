@@ -1,0 +1,4 @@
+2025-11-13 10:32:16, MOVE, v:1, k:poo@cinema, mode:DOWN
+2025-11-13 10:32:35, MOVE, v:1, k:poo@cinema, mode:PICK
+2025-11-13 10:32:36, EXEC, v:1, k:poo@cinema, mode:FULL, rate:0, size:2
+2025-11-13 10:32:38, MOVE, v:1, k:poo@cinema, mode:BACK

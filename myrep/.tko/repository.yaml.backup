@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: /workspaces/poo-dd-ab-bloco-b-woanny/myrep/.tko/cache/poo/Readme.md
-  cache_timestamp: '2025-11-12 21:23:43'
+  cache_timestamp: '2025-11-16 12:25:46'
   filters:
   - listas
 expanded:
@@ -26,6 +26,10 @@ tasks:
     study:300}'
   poo@pula-pula: '{rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:6,
     study:120}'
+  poo@cinema: '{rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:7,
+    study:200}'
+  poo@tabuleiro: '{rate:80, iagen:tentar_entender_onde_errei, other:foruns, alone:6,
+    study:300}'
 flags:
   quests: 0
   tracks: 0
@@ -33,4 +37,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@pula-pula
+selected: poo@tabuleiro

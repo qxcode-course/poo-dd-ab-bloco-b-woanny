@@ -1,0 +1,209 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-13_10-32-36",
+            "content": "@@ -0,0 +1,2 @@\n+%0A \n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-11-14_10-26-29",
+            "content": "@@ -1,373 +0,0 @@\n-class Theater:%0A    pass%0A%0Adef main ():%0A    theater = Theater(0)%0A%0A    while True:%0A        line = input()%0A        print('$' + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == 'end':%0A            break%0A        elif args%5B0%5D == 'init':%0A            theater = Theater(int(args%5B1%5D))%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quandp dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-14_10-32-18",
+            "content": "@@ -370,280 +370,4 @@\n a%C3%A7%C3%A3o\n-%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-11-14_10-34-05",
+            "content": "@@ -278,81 +278,372 @@\n %5D))%0A\n-        elif args%5B0%5D == 'show':%0A            print(theater)%0A        elif args \n+%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quandp dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-11-14_10-35-40",
+            "content": "@@ -354,196 +354,5 @@\n args\n-%5B0%5D == 'reserve':%0A            theater.reserve(args%5B1%5D, int(args%5B2%5D), int(args%5B3%5D))%0A        elif args%5B0%5D == 'cancel':%0A            theater.cancel(args%5B1%5D)%0A        else:%0A            print('erro')\n+ \n",
+            "lines": "18"
+        },
+        {
+            "label": "2025-11-14_10-38-35",
+            "content": "@@ -546,420 +546,4 @@\n ro')\n-%0A%0A#kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk%0A#kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk%0A#llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll%0A\n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-11-14_10-40-32",
+            "content": "@@ -1,196 +1,4 @@\n-class Client:%0A    def __init__(self, id: str, phone: int):%0A        self.__id = id%0A        self.__phone = phone%0A%0A    def getNome(self):%0A        return self.__nome%0A    %0A    def getIdade(self):%0A%0A\n clas\n@@ -8,16 +8,16 @@\n heater:%0A\n+\n     pass\n@@ -548,16 +548,8 @@\n ')%0A%0A\n-main()%0A%0A\n #kkk\n@@ -820,16 +820,16 @@\n kkkkkkk%0A\n+\n #lllllll\n@@ -962,142 +962,4 @@\n lll%0A\n-#nmnmmnmnmnmnmnmnmnmmmnmnmnmnmnmmnmnmnmnmnmnmnmmnmnmnmnmnmmnmnmnmnmnmnmnmnmnmnmnmnmmnmnmnmnmnmbmvmbnmmnmnmnmnmnmnmnmnmnmnmmnmnmnmnmnmnmnm%0A\n",
+            "lines": "27"
+        },
+        {
+            "label": "2025-11-14_10-45-57",
+            "content": "@@ -187,111 +187,8 @@\n lf):\n-%0A        return self.__idade%0A    %0A    def __str__(self):%0A        return f'%7Bself.__nome%7D:%7Bself.__idade%7D'\n %0A%0Acl\n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-11-14_10-48-14",
+            "content": "@@ -120,10 +120,12 @@\n  get\n-Id\n+Nome\n (sel\n@@ -150,19 +150,25 @@\n  self.__\n-id%0A\n+nome%0A    \n %0A    def\n@@ -175,12 +175,12 @@\n  get\n-Phon\n+Idad\n e(se\n@@ -206,20 +206,20 @@\n  self.__\n-phon\n+idad\n e%0A    %0A \n@@ -221,17 +221,16 @@\n    %0A    \n-#\n def __st\n@@ -244,17 +244,16 @@\n f):%0A    \n-#\n     retu\n@@ -265,18 +265,20 @@\n %7Bself.__\n-id\n+nome\n %7D:%7Bself.\n@@ -279,20 +279,20 @@\n %7Bself.__\n-phon\n+idad\n e%7D'%0A%0Acla\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-14_10-50-28",
+            "content": "@@ -303,96 +303,12 @@\n     \n-def __init__(self, size: int):%0A        self.__seats: list%5BClient %7C None%5D = %5BNone%5D * size\n+pass\n %0A%0Ade\n@@ -839,16 +839,292 @@\n main()%0A%0A\n+#kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk%0A#kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk%0A\n #lllllll\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-14_10-53-51",
+            "content": "@@ -922,8 +922,285 @@\n %0Amain()%0A\n+%0A#llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll%0A#nmnmmnmnmnmnmnmnmnmmmnmnmnmnmnmmnmnmnmnmnmnmnmmnmnmnmnmnmmnmnmnmnmnmnmnmnmnmnmnmnmmnmnmnmnmnmbmvmbnmmnmnmnmnmnmnmnmnmnmnmmnmnmnmnmnmnmnm%0A\n",
+            "lines": "43"
+        },
+        {
+            "label": "2025-11-14_10-54-08",
+            "content": "@@ -393,163 +393,8 @@\n ze%0A%0A\n-    def __search(self, name: str) -%3E int:%0A        for i, client in enumerate(self.__seats):%0A            if client is not None and client.getId() == name:%0A%0A\n def \n",
+            "lines": "40"
+        },
+        {
+            "label": "2025-11-14_10-56-18",
+            "content": "@@ -546,161 +546,8 @@\n ame:\n-%0A                return i%0A        return -1%0A    %0A    def __verifyIndex(self, index: int) -%3E bool:%0A        return 0 %3C= index %3C len(self.__seats)%0A    %0A    \n %0A%0Ade\n",
+            "lines": "44"
+        },
+        {
+            "label": "2025-11-14_11-01-37",
+            "content": "@@ -699,247 +699,8 @@\n     \n-def __str__(self):%0A        output = %5B%5D%0A        for seat in self.__seats:%0A            if seat is None:%0A                output.append('-')%0A            else:%0A                output.append(str(seat))%0A        return '%5B' + ' '.join(output) + '%5D'\n %0A%0Ade\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-11-14_11-05-50",
+            "content": "@@ -695,46 +695,8 @@\n    %0A\n-    def getSeats(self):%0A        pass%0A%0A\n     \n",
+            "lines": "58"
+        },
+        {
+            "label": "2025-11-14_11-07-14",
+            "content": "@@ -209,24 +209,25 @@\n ne%0A    %0A    \n+#\n def __str__(\n@@ -229,32 +229,33 @@\n tr__(self):%0A    \n+#\n     return f'%7Bse\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-14_20-42-13",
+            "content": "@@ -213,17 +213,16 @@\n    %0A    \n-#\n def __st\n@@ -236,17 +236,16 @@\n f):%0A    \n-#\n     retu\n@@ -1509,283 +1509,4 @@\n n()%0A\n-%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o%0A#menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o%0A#meninhinha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o%0A#menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-14_20-44-11",
+            "content": "@@ -591,25 +591,24 @@\n -1%0A    %0A    \n-#\n def __verify\n@@ -640,25 +640,24 @@\n %3E bool:%0A    \n-#\n     return 0\n@@ -727,26 +727,11 @@\n     \n-return self.__seat\n+pas\n s%0A%0A \n@@ -1506,8 +1506,288 @@\n %0A%0Amain()\n+%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o%0A#menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o%0A#meninhinha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o%0A#menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o\n",
+            "lines": "70"
+        },
+        {
+            "label": "2025-11-14_20-45-10",
+            "content": "@@ -705,72 +705,8 @@\n def \n-cancel(self, id:str):%0A        pos = self.__search(id)%0A%0A    #def \n getS\n@@ -713,33 +713,32 @@\n eats(self):%0A    \n-#\n     return self.\n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-11-14_20-46-08",
+            "content": "@@ -758,83 +758,8 @@\n (id)\n-%0A        if pos == -1:%0A            print('fail:cliente nao esta no cinema')\n %0A%0A  \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-11-14_20-47-00",
+            "content": "@@ -833,27 +833,8 @@\n ma')\n-%0A            return\n %0A%0A  \n",
+            "lines": "66"
+        },
+        {
+            "label": "2025-11-14_20-47-18",
+            "content": "@@ -591,24 +591,25 @@\n -1%0A    %0A    \n+#\n def __verify\n@@ -641,24 +641,25 @@\n %3E bool:%0A    \n+#\n     return 0\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-14_20-47-36",
+            "content": "@@ -703,357 +703,8 @@\n def \n-reserve(self, id: str, phone: int, index: int):%0A        if not self.__verifyIndex(index):%0A            print('fail:cadeira n%C3%A3o existe')%0A%0A        if self.__search(id) != -1:%0A            print('fail:cliente ja esta no cinema')%0A%0A        if self.__seats%5Bindex%5D is not None:%0A            print('fail: cadeira ja esta ocupada')%0A            return%0A%0A    #def \n canc\n@@ -721,25 +721,24 @@\n d:str):%0A    \n-#\n     pos = se\n@@ -761,17 +761,16 @@\n         \n-#\n if pos =\n@@ -779,25 +779,24 @@\n -1:%0A        \n-#\n     print('f\n@@ -832,25 +832,24 @@\n a')%0A        \n-#\n     return%0A%0A\n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-14_20-51-43",
+            "content": "@@ -209,24 +209,25 @@\n ne%0A    %0A    \n+#\n def __str__(\n@@ -229,32 +229,33 @@\n tr__(self):%0A    \n+#\n     return f'%7Bse\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-11-14_20-52-19",
+            "content": "@@ -209,25 +209,24 @@\n ne%0A    %0A    \n-#\n def __str__(\n@@ -228,33 +228,32 @@\n tr__(self):%0A    \n-#\n     return f'%7Bse\n@@ -831,35 +831,16 @@\n existe')\n-%0A            return\n %0A%0A      \n@@ -920,35 +920,16 @@\n cinema')\n-%0A            return\n %0A%0A      \n@@ -1013,24 +1013,24 @@\n a ocupada')%0A\n+\n             \n@@ -1041,57 +1041,8 @@\n rn%0A%0A\n-        self.__seats%5Bindex%5D = Client(id, phone)%0A%0A\n     \n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-11-14_20-53-46",
+            "content": "@@ -209,24 +209,25 @@\n ne%0A    %0A    \n+#\n def __str__(\n@@ -229,32 +229,33 @@\n tr__(self):%0A    \n+#\n     return f'%7Bse\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-14_20-54-07",
+            "content": "@@ -1124,16 +1124,232 @@\n phone)%0A%0A\n+    #def cancel(self, id:str):%0A    #    pos = self.__search(id)%0A        #if pos == -1:%0A        #    print('fail:cliente nao esta no cinema')%0A        #    return%0A%0A    #def getSeats(self):%0A    #    return self.__seats%0A\n %0A    def\n@@ -2122,189 +2122,4 @@\n in()\n-%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-14_20-55-31",
+            "content": "@@ -1128,222 +1128,8 @@\n e)%0A%0A\n-    #def cancel(self, id:str):%0A    #    pos = self.__search(id)%0A        #if pos == -1:%0A        #    print('fail:cliente nao esta no cinema')%0A        #    return%0A%0A    def getSeats(self):%0A        return self.__seats%0A\n %0A   \n@@ -1902,8 +1902,193 @@\n %0A%0Amain()\n+%0A%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o%0A#batatinha quando nasce se esparrama pelo ch%C3%A3o, menininha quando dorme p%C3%B5e a m%C3%A3o no cora%C3%A7%C3%A3o\n",
+            "lines": "77"
+        },
+        {
+            "label": "2025-11-14_20-56-29",
+            "content": "@@ -1124,24 +1124,25 @@\n phone)%0A%0A    \n+#\n def cancel(s\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-14_20-58-15",
+            "content": "@@ -1158,21 +1158,8 @@\n r):%0A\n-        pass%0A\n     \n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-14_20-59-22",
+            "content": "@@ -803,33 +803,32 @@\n     print('fail:\n- \n cadeira noo exis\n@@ -820,17 +820,17 @@\n adeira n\n-o\n+%C3%A3\n o existe\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-14_20-59-47",
+            "content": "@@ -821,17 +821,17 @@\n adeira n\n-a\n+o\n o existe\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-14_21-00-01",
+            "content": "@@ -913,17 +913,16 @@\n t('fail:\n- \n cliente \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-14_21-00-23",
+            "content": "@@ -1030,16 +1030,17 @@\n t('fail:\n+ \n cadeira \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-14_21-00-45",
+            "content": "@@ -1022,33 +1022,32 @@\n     print('fail:\n- \n cadeira ja esta \n@@ -1155,24 +1155,38 @@\n d:str):%0A    \n+    pass%0A    #\n     pos = se\n@@ -1209,16 +1209,17 @@\n         \n+#\n if pos =\n@@ -1224,32 +1224,33 @@\n  == -1:%0A        \n+#\n     print('fail:\n@@ -1262,9 +1262,9 @@\n te n\n-%C3%A3\n+a\n o es\n@@ -1278,32 +1278,33 @@\n inema')%0A        \n+#\n     return%0A%0A    \n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-11-14_21-01-29",
+            "content": "@@ -1226,33 +1226,32 @@\n     print('fail:\n- \n cliente nao esta\n@@ -1243,17 +1243,17 @@\n liente n\n-a\n+%C3%A3\n o esta n\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-14_21-01-49",
+            "content": "@@ -200,24 +200,28 @@\n elf.__phone%0A\n+    \n %0A    def __s\n@@ -278,17 +278,16 @@\n hone%7D'%0A%0A\n-%0A\n class Th\n@@ -584,16 +584,20 @@\n turn -1%0A\n+    \n %0A    def\n@@ -684,16 +684,20 @@\n _seats)%0A\n+    \n %0A    def\n@@ -749,34 +749,8 @@\n t):%0A\n-        # indice inv%C3%A1lido%0A\n     \n@@ -811,16 +811,17 @@\n t('fail:\n+ \n cadeira \n@@ -857,42 +857,8 @@\n rn%0A%0A\n-        # cliente ja ta no cinema%0A\n     \n@@ -913,16 +913,17 @@\n t('fail:\n+ \n cliente \n@@ -966,34 +966,8 @@\n rn%0A%0A\n-        # cadeira ocupada%0A\n     \n@@ -1081,26 +1081,8 @@\n rn%0A%0A\n-        # reserva%0A\n     \n@@ -1150,17 +1150,16 @@\n elf, id:\n- \n str):%0A  \n@@ -1288,42 +1288,8 @@\n rn%0A%0A\n-        self.__seats%5Bpos%5D = None%0A%0A\n     \n@@ -1590,16 +1590,17 @@\n def main\n+ \n ():%0A    \n@@ -1678,18 +1678,18 @@\n int(\n-f\n '$\n-%7B\n+' + \n line\n-%7D'\n )%0A  \n@@ -1762,17 +1762,16 @@\n   break%0A\n-%0A\n         \n@@ -1834,25 +1834,24 @@\n t(args%5B1%5D))%0A\n-%0A\n         elif\n@@ -1897,17 +1897,16 @@\n heater)%0A\n-%0A\n         \n@@ -1997,17 +1997,16 @@\n gs%5B3%5D))%0A\n-%0A\n         \n@@ -2067,17 +2067,16 @@\n rgs%5B1%5D)%0A\n-%0A\n         \n@@ -2104,35 +2104,16 @@\n nt('\n-fail: comando invalid\n+err\n o')%0A%0A\n-%0A\n main\n",
+            "lines": "82"
+        },
+        {
+            "label": "2025-11-14_21-04-07",
+            "content": "@@ -818,33 +818,32 @@\n     print('fail:\n- \n cadeira nao exis\n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-11-14_21-04-23",
+            "content": "@@ -954,33 +954,32 @@\n     print('fail:\n- \n cliente ja esta \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-11-14_21-04-45",
+            "content": "@@ -1805,18 +1805,18 @@\n int(\n+f\n '$\n-' + \n+%7B\n line\n+%7D'\n )%0A  \n@@ -1889,16 +1889,17 @@\n   break%0A\n+%0A\n         \n@@ -1962,24 +1962,25 @@\n t(args%5B1%5D))%0A\n+%0A\n         elif\n@@ -2026,16 +2026,17 @@\n heater)%0A\n+%0A\n         \n@@ -2127,16 +2127,17 @@\n gs%5B3%5D))%0A\n+%0A\n         \n@@ -2162,16 +2162,16 @@\n ancel':%0A\n-\n         \n@@ -2198,16 +2198,17 @@\n rgs%5B1%5D)%0A\n+%0A\n         \n",
+            "lines": "95"
+        },
+        {
+            "label": "2025-11-14_21-05-56",
+            "content": "class Client:\n    def __init__(self, id: str, phone: int):\n        self.__id = id\n        self.__phone = phone\n\n    def getId(self):\n        return self.__id\n\n    def getPhone(self):\n        return self.__phone\n\n    def __str__(self):\n        return f'{self.__id}:{self.__phone}'\n\n\nclass Theater:\n    def __init__(self, size: int):\n        self.__seats: list[Client | None] = [None] * size\n\n    def __search(self, name: str) -> int:\n        for i, client in enumerate(self.__seats):\n            if client is not None and client.getId() == name:\n                return i\n        return -1\n\n    def __verifyIndex(self, index: int) -> bool:\n        return 0 <= index < len(self.__seats)\n\n    def reserve(self, id: str, phone: int, index: int):\n        # indice inv\u00e1lido\n        if not self.__verifyIndex(index):\n            print('fail: cadeira nao existe')\n            return\n\n        # cliente ja ta no cinema\n        if self.__search(id) != -1:\n            print('fail: cliente ja esta no cinema')\n            return\n\n        # cadeira ocupada\n        if self.__seats[index] is not None:\n            print('fail: cadeira ja esta ocupada')\n            return\n\n        # reserva\n        self.__seats[index] = Client(id, phone)\n\n    def cancel(self, id: str):\n        pos = self.__search(id)\n        if pos == -1:\n            print('fail: cliente nao esta no cinema')\n            return\n\n        self.__seats[pos] = None\n\n    def getSeats(self):\n        return self.__seats\n\n    def __str__(self):\n        output = []\n        for seat in self.__seats:\n            if seat is None:\n                output.append('-')\n            else:\n                output.append(str(seat))\n        return '[' + ' '.join(output) + ']'\n\ndef main():\n    theater = Theater(0)\n\n    while True:\n        line = input()\n        print('$' + line)\n        args = line.split()\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'init':\n            theater = Theater(int(args[1]))\n        elif args[0] == 'show':\n            print(theater)\n        elif args[0] == 'reserve':\n            theater.reserve(args[1], int(args[2]), int(args[3]))\n        elif args[0] == 'cancel':\n            theater.cancel(args[1])\n        else:\n            print('fail: comando invalido')\n\n\nmain()",
+            "lines": "90"
+        }
+    ]
+}

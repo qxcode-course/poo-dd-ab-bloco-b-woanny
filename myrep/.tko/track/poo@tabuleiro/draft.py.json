@@ -1,0 +1,159 @@
+{
+    "patches": [
+        {
+            "label": "2025-11-15_11-46-37",
+            "content": "@@ -1,128 +0,0 @@\n-class Player:%0A    def __init__(self, label: int):%0A        self.__label = label%0A        self.__pos = 0%0A        self.__free = True\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-11-15_12-05-07",
+            "content": "@@ -125,198 +125,4 @@\n True\n-%0A%0Aclass Board:%0A    def __init__(self):%0A        self.__trapList: list%5Bint%5D = %5B%5D%0A        self.__players: list%5BPlayer%5D = %5BPlayer(x + 1) for x in range(nPlayers)%5D%0A        self.__running: bool = True\n",
+            "lines": "5"
+        },
+        {
+            "label": "2025-11-15_12-11-50",
+            "content": "@@ -161,39 +161,8 @@\n self\n-, nPlayers: int, boardSize: int\n ):%0A \n@@ -319,624 +319,4 @@\n True\n-%0A        self.__boardSize: int = boardSize%0A%0Adef main():%0A    board = Board()%0A%0A    while True:%0A        line = input()%0A        print('$' + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == 'init':%0A            nPlayers = int(args%5B1%5D)%0A            boardSize = int(args%5B2%5D)%0A            board = Board(nPlayers, boardSize)%0A        elif args%5B0%5D == 'show':%0A            board.show()%0A        elif args%5B0%5D == 'addTrap'%0A            pos = int(args%5B1%5D)%0A            board.addTrap(pos)%0A        elif args%5B0%5D == 'roll':%0A            value = int(args%5B1%5D)%0A            board.rollDice(value)%0A        else:%0A            print('erro')%0A%0Amain()\n",
+            "lines": "11"
+        },
+        {
+            "label": "2025-11-16_11-21-44",
+            "content": "@@ -394,429 +394,8 @@\n ze%0A%0A\n-    def show(self):%0A        for p in self.__players:%0A            line = %5B'.'%5D * (self.__boardSize + 1)%0A            pos = p.getPos()%0A            line%5Bpos%5D = str(p.getLabel())%0A            print(f'player%7Bp.getLabel()%7D: ' + ''.join(line))%0A%0A        trap_line = %5B%5D%0A        for i in range(1, self.__boardSize + 1):%0A            trap_line.append('x' if i in self.__traps else '.')%0A        print('traps__: ' + ''.join(trap_line))%0A%0A\n def \n",
+            "lines": "37"
+        },
+        {
+            "label": "2025-11-16_11-31-50",
+            "content": "@@ -127,350 +127,8 @@\n ue%0A%0A\n-    def getLabel(self):%0A        return self.__label%0A    %0A    def gotPos(self):%0A        return self.__pos%0A    %0A    def isFree(self):%0A        return self.__free%0A    %0A    def setPos(self, pos:int):%0A        self.__pos = pos%0A%0A    def setFree(self, free: bool):%0A        self.__free = free%0A%0A    def __str__(self):%0A        return str (self.__label)%0A%0A\n clas\n@@ -1178,17 +1178,16 @@\n addTrap'\n-:\n %0A       \n",
+            "lines": "49"
+        },
+        {
+            "label": "2025-11-16_11-38-00",
+            "content": "@@ -736,42 +736,8 @@\n ze%0A%0A\n-    def addTrap(self, pos: int):%0A%0A\n     \n",
+            "lines": "67"
+        },
+        {
+            "label": "2025-11-16_11-40-37",
+            "content": "@@ -734,34 +734,8 @@\n Size\n-%0A        self.__traps: int\n %0A%0A  \n@@ -768,83 +768,8 @@\n nt):\n-%0A        if 1 %3C= pos %3C= self.__boardSize:%0A            self.__traps.add(pos)\n %0A%0A  \n",
+            "lines": "69"
+        },
+        {
+            "label": "2025-11-16_11-42-42",
+            "content": "@@ -760,35 +760,8 @@\n  int\n-%0A        self.__current = 0\n %0A%0A  \n@@ -871,928 +871,8 @@\n s)%0A%0A\n-    def rollDice(self, value: int):%0A        if not self.__running:%0A            print('game is over.')%0A            return%0A        %0A        player = self.__players%5Bself.__current%5D%0A        label = player.getLabel()%0A%0A        if not player.isfree():%0A            if value %25 2 == 0:%0A                player.setFree(True)%0A                print(f'player%7Blabel%7D se libertou.')%0A            else:%0A                print(f'player%7Blabel%7D continua peso')%0A%0A            self.__current = (self.__current + 1) %25 len(self.__players)%0A%0A        newpos = player.getPos() + value%0A        if newpos %3E self.__boardSize:%0A            player.setPos(self.__boardSize)%0A            print(f'player%7Blabel%7D ganho')%0A%0A        player.setPos(newpos)%0A        print(f'player%7Blabel%7D andou para %7Bnewpos%7D')%0A%0A        if newpos in self.__traps:%0A            player.setFree(False)%0A            print(f'player%7Blabel%7D caiu em uma armadilha')%0A%0A        self.__current = self%0A%0A\n     \n",
+            "lines": "72"
+        },
+        {
+            "label": "2025-11-16_11-52-49",
+            "content": "@@ -757,24 +757,11 @@\n ps: \n-set%5Bint%5D = set()\n+int\n %0A   \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-16_11-53-53",
+            "content": "@@ -189,17 +189,17 @@\n    def g\n-e\n+o\n tPos(sel\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-16_11-54-59",
+            "content": "@@ -1144,17 +1144,17 @@\n layer.is\n-F\n+f\n ree():%0A \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-16_11-55-55",
+            "content": "@@ -448,16 +448,17 @@\n turn str\n+ \n (self.__\n@@ -799,50 +799,9 @@\n t = \n-(self.__current + 1) %25 len(self.__players)\n+0\n %0A%0A  \n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-16_11-57-26",
+            "content": "@@ -2318,35 +2318,16 @@\n = Board(\n-nPlayers, boardSize\n )%0A%0A    w\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-16_11-58-12",
+            "content": "@@ -1556,38 +1556,48 @@\n   player.setPos(\n-newpos\n+self.__boardSize\n )%0A            pr\n@@ -2318,16 +2318,35 @@\n = Board(\n+nPlayers, boardSize\n )%0A%0A    w\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-16_12-00-09",
+            "content": "@@ -1869,47 +1869,19 @@\n def \n-toString(self) -%3E str:%0A        out = %5B%5D\n+show(self):\n %0A   \n@@ -1908,16 +1908,17 @@\n _players\n+:\n %0A       \n@@ -2043,26 +2043,21 @@\n         \n-out.append\n+print\n (f'playe\n@@ -2092,16 +2092,17 @@\n (line))%0A\n+%0A\n         \n@@ -2109,74 +2109,19 @@\n trap\n-s = ''.join('x' if i in self.__trapList else '.' %0A                \n+_line = %5B%5D%0A\n     \n@@ -2163,17 +2163,17 @@\n ize + 1)\n-)\n+:\n %0A       \n@@ -2177,119 +2177,109 @@\n     \n-out.append('traps__: ' + traps)%0A        return '%5Cn'.join(out)%0A%0A    def show(self):%0A        print(self.toString(\n+    trap_line.append('x' if i in self.__traps else '.')%0A        print('traps__: ' + ''.join(trap_line\n ))%0A%0A\n",
+            "lines": "104"
+        },
+        {
+            "label": "2025-11-16_12-05-12",
+            "content": "@@ -304,33 +304,32 @@\n etPos(self, pos:\n- \n int):%0A        se\n@@ -464,17 +464,16 @@\n label)%0A%0A\n-%0A\n class Bo\n@@ -524,32 +524,72 @@\n oardSize: int):%0A\n+        self.__trapList: list%5Bint%5D = %5B%5D%0A\n         self.__p\n@@ -795,17 +795,53 @@\n rent\n-: int = 0\n+ = (self.__current + 1) %25 len(self.__players)\n %0A%0A  \n@@ -1164,32 +1164,8 @@\n ()%0A%0A\n-        # jogador preso%0A\n     \n@@ -1383,13 +1383,11 @@\n ua p\n-r\n eso\n-.\n ')%0A%0A\n@@ -1462,51 +1462,8 @@\n rs)%0A\n-            return%0A%0A        # jogador livre\n %0A   \n@@ -1503,26 +1503,8 @@\n alue\n-%0A%0A        # ganhou\n %0A   \n@@ -1555,120 +1555,71 @@\n    p\n-rint(f'player%7Blabel%7D ganhou.')%0A            self.__running = False%0A            return%0A%0A        # movimento normal\n+layer.setPos(newpos)%0A            print(f'player%7Blabel%7D ganho')%0A\n %0A   \n@@ -1698,41 +1698,12 @@\n pos%7D\n-.\n ')%0A%0A\n-        # caiu em armadilha%0A\n     \n@@ -1826,39 +1826,12 @@\n ilha\n-.\n ')%0A%0A\n-        # pr%C3%B3ximo jogador%0A\n     \n@@ -1855,50 +1855,12 @@\n t = \n-(\n self\n-.__current + 1) %25 len(self.__players)\n %0A%0A  \n@@ -1936,17 +1936,16 @@\n _players\n-:\n %0A       \n@@ -2124,17 +2124,16 @@\n (line))%0A\n-%0A\n         \n@@ -2171,17 +2171,20 @@\n f.__trap\n-s\n+List\n  else '.\n@@ -2374,17 +2374,16 @@\n ing())%0A%0A\n-%0A\n def main\n@@ -2402,12 +2402,15 @@\n d = \n-None\n+Board()\n %0A%0A  \n@@ -2651,17 +2651,16 @@\n rdSize)%0A\n-%0A\n         \n@@ -2699,112 +2699,20 @@\n     \n-if board:%0A                board.show()%0A            else:%0A                print('board not initialized')%0A\n+board.show()\n %0A   \n@@ -2747,34 +2747,8 @@\n p':%0A\n-            if board:%0A    \n     \n@@ -2766,36 +2766,32 @@\n  = int(args%5B1%5D)%0A\n-    \n             boar\n@@ -2801,25 +2801,24 @@\n ddTrap(pos)%0A\n-%0A\n         elif\n@@ -2841,34 +2841,8 @@\n l':%0A\n-            if board:%0A    \n     \n@@ -2878,28 +2878,24 @@\n             \n-  \n-  \n board.rollDi\n@@ -2904,17 +2904,16 @@\n (value)%0A\n-%0A\n         \n@@ -2945,15 +2945,14 @@\n erro')%0A%0A\n-%0A\n main()\n",
+            "lines": "107"
+        },
+        {
+            "label": "2025-11-16_12-08-44",
+            "content": "@@ -2651,17 +2651,16 @@\n e.split(\n- \n )%0A%0A     \n",
+            "lines": "128"
+        },
+        {
+            "label": "2025-11-16_12-10-21",
+            "content": "@@ -2651,16 +2651,17 @@\n e.split(\n+ \n )%0A%0A     \n@@ -2680,57 +2680,8 @@\n %5D ==\n- 'end':%0A            break%0A        elif args%5B0%5D ==\n  'in\n@@ -2805,16 +2805,17 @@\n rdSize)%0A\n+%0A\n         \n@@ -2954,16 +2954,17 @@\n lized')%0A\n+%0A\n         \n@@ -3078,24 +3078,25 @@\n ddTrap(pos)%0A\n+%0A\n         elif\n@@ -3208,24 +3208,25 @@\n Dice(value)%0A\n+%0A\n         else\n@@ -3254,14 +3254,15 @@\n erro')%0A%0A\n+%0A\n main()\n",
+            "lines": "128"
+        },
+        {
+            "label": "2025-11-16_12-13-01",
+            "content": "@@ -2064,39 +2064,8 @@\n = %5B%5D\n-%0A%0A        # mostra os jogadores\n %0A   \n@@ -2294,171 +2294,58 @@\n     \n-# mostra as traps%0A        traps_line = %5B%5D%0A        for i in range(0, self.__boardSize + 1):%0A            if i in self.__traps:%0A                traps_line.append('x')\n+traps = ''.join('x' if i in self.__traps else '.' \n %0A   \n@@ -2344,39 +2344,32 @@\n '.' %0A           \n- else:%0A\n                 \n@@ -2369,34 +2369,48 @@\n     \n-   traps_line.append('.')%0A\n+for i in range(1, self.__boardSize + 1))\n %0A   \n@@ -2443,29 +2443,14 @@\n ' + \n-''.join(traps_line))%0A\n+traps)\n %0A   \n@@ -2477,16 +2477,69 @@\n n(out)%0A%0A\n+    def show(self):%0A        print(self.toString())%0A%0A%0A\n def main\n",
+            "lines": "125"
+        },
+        {
+            "label": "2025-11-16_12-15-41",
+            "content": "@@ -2633,61 +2633,8 @@\n t)%0A%0A\n-    def show(self):%0A        print(self.toString())%0A%0A%0A\n def \n@@ -2800,32 +2800,34 @@\n   break%0A        \n+el\n if args%5B0%5D == 'i\n",
+            "lines": "130"
+        },
+        {
+            "label": "2025-11-16_12-16-12",
+            "content": "@@ -1913,16 +1913,17 @@\n rmadilha\n+.\n ')%0A%0A    \n",
+            "lines": "134"
+        },
+        {
+            "label": "2025-11-16_12-16-42",
+            "content": "@@ -1756,16 +1756,17 @@\n %7Bnewpos%7D\n+.\n ')%0A%0A    \n",
+            "lines": "134"
+        },
+        {
+            "label": "2025-11-16_12-16-49",
+            "content": "@@ -1591,16 +1591,17 @@\n %7D ganhou\n+.\n ')%0A     \n",
+            "lines": "134"
+        },
+        {
+            "label": "2025-11-16_12-17-17",
+            "content": "@@ -1333,16 +1333,17 @@\n ua preso\n+.\n ')%0A%0A    \n",
+            "lines": "134"
+        },
+        {
+            "label": "2025-11-16_12-17-31",
+            "content": "@@ -1,3455 +1,49 @@\n-class Player:%0A    def __init__(self, label: int):%0A        self.__label = label%0A        self.__pos = 0%0A        self.__free = True%0A%0A    def getLabel(self):%0A        return self.__label%0A    %0A    def getPos(self):%0A        return self.__pos%0A    %0A    def isFree(self):%0A        return self.__free%0A    %0A    def setPos(self, pos: int):%0A        self.__pos = pos%0A%0A    def setFree(self, free: bool):%0A        self.__free = free%0A%0A    def __str__(self):%0A        return str(self.__label)%0A%0A%0Aclass Board:%0A    def __init__(self, nPlayers: int, boardSize: int):%0A        self.__players: list%5BPlayer%5D = %5BPlayer(x + 1) for x in range(nPlayers)%5D%0A        self.__running: bool = True%0A        self.__boardSize: int = boardSize%0A        self.__traps: set%5Bint%5D = set()%0A        self.__current: int = 0%0A%0A    def addTrap(self, pos: int):%0A        if 1 %3C= pos %3C= self.__boardSize:%0A            self.__traps.add(pos)%0A%0A    def rollDice(self, value: int):%0A        if not self.__running:%0A            print('game is over')%0A            return%0A        %0A        player = self.__players%5Bself.__current%5D%0A        label = player.getLabel()%0A%0A        # jogador preso%0A        if not player.isFree():%0A            if value %25 2 == 0:%0A                player.setFree(True)%0A                print(f'player%7Blabel%7D se libertou')%0A            else:%0A                print(f'player%7Blabel%7D continua preso')%0A%0A            self.__current = (self.__current + 1) %25 len(self.__players)%0A            return%0A%0A        # jogador livre%0A        newpos = player.getPos() + value%0A%0A        # ganhou%0A        if newpos %3E self.__boardSize:%0A            print(f'player%7Blabel%7D ganhou')%0A            self.__running = False%0A            return%0A%0A        # movimento normal%0A        player.setPos(newpos)%0A        print(f'player%7Blabel%7D andou para %7Bnewpos%7D')%0A%0A        # caiu em armadilha%0A        if newpos in self.__traps:%0A            player.setFree(False)%0A            print(f'player%7Blabel%7D caiu em uma armadilha')%0A%0A        # pr%C3%B3ximo jogador%0A        self.__current = (self.__current + 1) %25 len(self.__players)%0A%0A    def toString(self) -%3E str:%0A        out = %5B%5D%0A%0A        # mostra os jogadores%0A        for p in self.__players:%0A            line = %5B'.'%5D * (self.__boardSize + 1)%0A            pos = p.getPos()%0A            line%5Bpos%5D = str(p.getLabel())%0A            out.append(f'player%7Bp.getLabel()%7D: ' + ''.join(line))%0A%0A        # mostra as traps%0A        traps_line = %5B%5D%0A        for i in range(0, self.__boardSize + 1):%0A            if i in self.__traps:%0A                traps_line.append('x')%0A            else:%0A                traps_line.append('.')%0A%0A        out.append('traps__: ' + ''.join(traps_line))%0A%0A        return '%5Cn'.join(out)%0A%0A    def show(self):%0A        print(self.toString())%0A%0A%0Adef main():%0A    board = None%0A%0A    while True:%0A        line = input()%0A        print('$' + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == 'end':%0A            break%0A        if args%5B0%5D == 'init':%0A            nPlayers = int(args%5B1%5D)%0A            boardSize = int(args%5B2%5D)%0A            board = Board(nPlayers, boardSize)%0A        elif args%5B0%5D == 'show':%0A            if board:%0A                board.show()%0A            else:%0A                print('board not initialized')%0A        elif args%5B0%5D == 'addTrap':%0A            if board:%0A                pos = int(args%5B1%5D)%0A                board.addTrap(pos)%0A        elif args%5B0%5D == 'roll':%0A            if board:%0A                value = int(args%5B1%5D)%0A                board.rollDice(value)%0A        else:%0A            print('erro')%0A%0Amain()\n+@@ -1259,16 +1259,17 @@%0A libertou%0A+.%0A ')%250A     %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-11-16_12-17-55",
+            "content": "@@ -3441,14 +3441,15 @@\n 'erro')%0A\n+%0A\n main()\n",
+            "lines": "134"
+        },
+        {
+            "label": "2025-11-16_12-21-58",
+            "content": "@@ -2056,16 +2056,46 @@\n t = %5B%5D%0A%0A\n+        # mostra os jogadores%0A\n         \n@@ -2202,58 +2202,8 @@\n s()%0A\n-%0A            if 0 %3C= pos %3C= self.__boardSize:%0A    \n     \n@@ -2240,17 +2240,16 @@\n abel())%0A\n-%0A\n         \n@@ -2319,63 +2319,171 @@\n     \n-traps_line = ''.join('x' if i in self.__traps else '.' \n+# mostra as traps%0A        traps_line = %5B%5D%0A        for i in range(0, self.__boardSize + 1):%0A            if i in self.__traps:%0A                traps_line.append('x')\n %0A   \n@@ -2483,32 +2483,38 @@\n x')%0A            \n+else:%0A\n                 \n@@ -2517,44 +2517,29 @@\n     \n-for i in range(self.__boardSize + 1)\n+traps_line.append('.'\n )%0A%0A \n@@ -2570,16 +2570,24 @@\n __: ' + \n+''.join(\n traps_li\n@@ -2585,24 +2585,26 @@\n (traps_line)\n+)%0A\n %0A        ret\n",
+            "lines": "133"
+        },
+        {
+            "label": "2025-11-16_12-25-31",
+            "content": "@@ -2263,82 +2263,8 @@\n l())\n-%0A            else:%0A                line%5B-1%5D = '?'  # marca erros de l%C3%B3gica\n %0A%0A  \n",
+            "lines": "129"
+        },
+        {
+            "label": "2025-11-16_12-25-53",
+            "content": "@@ -2259,16 +2259,90 @@\n Label())\n+%0A            else:%0A                line%5B-1%5D = '?'  # marca erros de l%C3%B3gica\n %0A%0A      \n@@ -2647,320 +2647,23 @@\n int(\n-'--- STATE ---')%0A        print(f'boardSize = %7Bself.__boardSize%7D, running = %7Bself.__running%7D, current = %7Bself.__current%7D')%0A        for p in self.__players:%0A            print(f'player%7Bp.getLabel()%7D: pos=%7Bp.getPos()%7D free=%7Bp.isFree()%7D')%0A        print(f'traps = %7Bsorted(self.__traps)%7D')%0A        print('-------------'\n+self.toString()\n )%0A%0A%0A\n",
+            "lines": "131"
+        },
+        {
+            "label": "2025-11-16_12-28-39",
+            "content": "@@ -2230,19 +2230,16 @@\n         \n-if \n line%5Bpos\n@@ -2245,130 +2245,8 @@\n s%5D =\n-= '.':%0A                    line%5Bpos%5D = str(p.getLabel())%0A                else:%0A                    line%5Bpos%5D = line%5Bpos%5D +\n  str\n@@ -2573,23 +2573,320 @@\n int(\n-self.toString()\n+'--- STATE ---')%0A        print(f'boardSize = %7Bself.__boardSize%7D, running = %7Bself.__running%7D, current = %7Bself.__current%7D')%0A        for p in self.__players:%0A            print(f'player%7Bp.getLabel()%7D: pos=%7Bp.getPos()%7D free=%7Bp.isFree()%7D')%0A        print(f'traps = %7Bsorted(self.__traps)%7D')%0A        print('-------------'\n )%0A%0A%0A\n",
+            "lines": "134"
+        },
+        {
+            "label": "2025-11-16_12-31-48",
+            "content": "class Player:\n    def __init__(self, label: int):\n        self.__label = label\n        self.__pos = 0\n        self.__free = True\n\n    def getLabel(self):\n        return self.__label\n    \n    def getPos(self):\n        return self.__pos\n    \n    def isFree(self):\n        return self.__free\n    \n    def setPos(self, pos: int):\n        self.__pos = pos\n\n    def setFree(self, free: bool):\n        self.__free = free\n\n    def __str__(self):\n        return str(self.__label)\n\n\nclass Board:\n    def __init__(self, nPlayers: int, boardSize: int):\n        self.__players: list[Player] = [Player(x + 1) for x in range(nPlayers)]\n        self.__running: bool = True\n        self.__boardSize: int = boardSize\n        self.__traps: set[int] = set()\n        self.__current: int = 0\n\n    def addTrap(self, pos: int):\n        if 1 <= pos <= self.__boardSize:\n            self.__traps.add(pos)\n\n    def rollDice(self, value: int):\n        if not self.__running:\n            print('game is over')\n            return\n        \n        player = self.__players[self.__current]\n        label = player.getLabel()\n\n        # jogador preso\n        if not player.isFree():\n            if value % 2 == 0:\n                player.setFree(True)\n                print(f'player{label} se libertou')\n            else:\n                print(f'player{label} continua preso')\n\n            self.__current = (self.__current + 1) % len(self.__players)\n            return\n\n        # jogador livre\n        newpos = player.getPos() + value\n\n        # ganhou\n        if newpos > self.__boardSize:\n            print(f'player{label} ganhou')\n            self.__running = False\n            return\n\n        # movimento normal\n        player.setPos(newpos)\n        print(f'player{label} andou para {newpos}')\n\n        # caiu em armadilha\n        if newpos in self.__traps:\n            player.setFree(False)\n            print(f'player{label} caiu em uma armadilha')\n\n        # pr\u00f3ximo jogador\n        self.__current = (self.__current + 1) % len(self.__players)\n\n    def toString(self) -> str:\n        out = []\n\n        for p in self.__players:\n            line = ['.'] * (self.__boardSize + 1)\n            pos = p.getPos()\n\n            if 0 <= pos <= self.__boardSize:\n                if line[pos] == '.':\n                    line[pos] = str(p.getLabel())\n                else:\n                    line[pos] = line[pos] + str(p.getLabel())\n\n            out.append(f'player{p.getLabel()}: ' + ''.join(line))\n\n        traps_line = ''.join('x' if i in self.__traps else '.' \n                            for i in range(self.__boardSize + 1))\n\n        out.append('traps__: ' + traps_line)\n        return '\\n'.join(out)\n\n    def show(self):\n        print(self.toString())\n\n\ndef main():\n    board = None\n\n    while True:\n        line = input()\n        print('$' + line)\n        args = line.split()\n\n        if args[0] == 'end':\n            break\n        if args[0] == 'init':\n            nPlayers = int(args[1])\n            boardSize = int(args[2])\n            board = Board(nPlayers, boardSize)\n        elif args[0] == 'show':\n            if board:\n                board.show()\n            else:\n                print('board not initialized')\n        elif args[0] == 'addTrap':\n            if board:\n                pos = int(args[1])\n                board.addTrap(pos)\n        elif args[0] == 'roll':\n            if board:\n                value = int(args[1])\n                board.rollDice(value)\n        else:\n            print('erro')\nmain()",
+            "lines": "132"
+        }
+    ]
+}

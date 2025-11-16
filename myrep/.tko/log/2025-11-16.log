@@ -1,0 +1,55 @@
+2025-11-16 11:21:43, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 11:21:44, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:37
+2025-11-16 11:21:51, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 11:31:49, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 11:31:50, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:49
+2025-11-16 11:31:52, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 11:38:00, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 11:38:00, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:67
+2025-11-16 11:38:02, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 11:40:37, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 11:40:37, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:69
+2025-11-16 11:40:43, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 11:42:41, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 11:42:42, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:72
+2025-11-16 11:42:44, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 11:52:48, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 11:52:49, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:104
+2025-11-16 11:53:53, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:104
+2025-11-16 11:54:59, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:104
+2025-11-16 11:55:55, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:104
+2025-11-16 11:57:26, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:104
+2025-11-16 11:58:12, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:104
+2025-11-16 12:00:09, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:104
+2025-11-16 12:05:12, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:107
+2025-11-16 12:05:13, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0
+2025-11-16 12:05:19, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 12:08:42, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 12:08:44, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:128
+2025-11-16 12:10:21, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:128
+2025-11-16 12:13:01, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:125
+2025-11-16 12:15:41, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:130
+2025-11-16 12:16:12, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:10, size:134
+2025-11-16 12:16:16, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 12:16:28, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 12:16:29, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:10
+2025-11-16 12:16:42, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:10, size:134
+2025-11-16 12:16:49, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:40, size:134
+2025-11-16 12:16:53, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 12:17:01, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 12:17:03, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:40
+2025-11-16 12:17:17, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:40, size:134
+2025-11-16 12:17:18, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 12:17:30, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 12:17:31, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:60, size:134
+2025-11-16 12:17:39, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:80, size:134
+2025-11-16 12:17:39, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:80, size:134
+2025-11-16 12:17:55, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:80, size:134
+2025-11-16 12:21:58, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:80, size:133
+2025-11-16 12:25:31, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:80, size:129
+2025-11-16 12:25:52, MOVE, v:1, k:poo@tabuleiro, mode:PICK
+2025-11-16 12:25:53, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:80, size:131
+2025-11-16 12:28:39, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:0, size:134
+2025-11-16 12:31:48, EXEC, v:1, k:poo@tabuleiro, mode:FULL, rate:80, size:132
+2025-11-16 12:32:43, MOVE, v:1, k:poo@tabuleiro, mode:BACK
+2025-11-16 12:33:28, SELF, v:1, k:poo@tabuleiro, rate:80, iagen:tentar_entender_onde_errei, other:foruns, alone:6, study:300
