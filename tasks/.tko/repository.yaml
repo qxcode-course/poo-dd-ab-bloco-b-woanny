@@ -8,25 +8,18 @@ sources:
   cache_timestamp: ''
   filters: null
 - database: poo
-  link: https://github.com/qxcodepoo/arcade/blob/master/Readme.md
-  type: remote
+  link: https://github.com/qxcodepoo/arcade.git
+  type: clone
   branch: master
-  cache_path: /workspaces/poo-dd-ab-bloco-b-woanny/tasks/.tko/cache/poo.md
-  cache_timestamp: '2025-10-28 16:46:36'
+  cache_path: ''
+  cache_timestamp: '2025-12-01 00:29:47'
   filters:
-  - acesso
-  - simples
+  - crud
 expanded:
 - poo@campanha-principal
-- poo@bloco_b-agregação-simples
-- poo@bloco_b-modificadores-de-acesso
+- poo@bloco_d-crud-com-mapas-e-enumerações
 tasks:
-  poo@motoca: '{rate:100, iagen:pra_tentar_me_ajudar_a_achar_meus_erros, guide:video_da_aula_gravada_pelo_professor,
-    alone:6, study:180}'
-  poo@grafite: '{rate:100, human:amigo, iagen:pra_ajuda_a_entender_oq_errei, alone:7,
-    study:200}'
-  poo@motouber: '{rate:100, human:amigo, iagen:encontrar_meus_erros, alone:7, study:240}'
-  poo@notebook: '{rate:100, human:amigo, iagen:gpt_pra_tirar_duvidas, alone:7, study:240}'
+  poo@contato: '{rate:100, human:amigo, iagen:encontrar_alguns_erros, alone:7, study:300}'
 flags:
   quests: 0
   tracks: 0
@@ -34,4 +27,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@charger
+selected: poo@contato
