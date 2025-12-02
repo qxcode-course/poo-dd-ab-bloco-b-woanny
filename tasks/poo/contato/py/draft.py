@@ -19,41 +19,41 @@ class Fone:
 
 class Contact:
     def __init__(self, name: str = ""):
-        self._name = name
-        self._favorited = False
-        self._fones: list[Fone] = []
+        self.__name = name
+        self.__favorited = False
+        self.__fones: list[Fone] = []
 
     def addFone(self, id: str, number: str) -> None:
         if not Fone.isValid(number):
             print('fail: invalid number')
             return
-        self._fones.append(Fone(id, number))
+        self.__fones.append(Fone(id, number))
 
     def rmFone(self, index: int) -> None:
-        if 0 <= index < len(self._fones):
-            self._fones.pop(index)
+        if 0 <= index < len(self.__fones):
+            self.__fones.pop(index)
         else:
             print('fail')
 
     def toogleFavorited(self) -> None:
-        self._favorited = not self._favorited
+        self.__favorited = not self.__favorited
 
     def isFavorited(self) -> bool:
-        return self._favorited
+        return self.__favorited
     
     def getFones(self) -> list[Fone]:
-        return self._fones
+        return self.__fones
 
     def getName(self) -> str:
-        return self._name
+        return self.__name
 
     def setName(self, name: str) -> None:
-        self._name = name
+        self.__name = name
 
     def __str__(self):
-        prefix = '@ ' if self._favorited else '- '
-        inside = ', '.join(str(f) for f in self._fones)
-        return f'{prefix}{self._name} [{inside}]'
+        prefix = '@ ' if self.__favorited else '- '
+        inside = ', '.join(str(f) for f in self.__fones)
+        return f'{prefix}{self.__name} [{inside}]'
 
 
 def main():

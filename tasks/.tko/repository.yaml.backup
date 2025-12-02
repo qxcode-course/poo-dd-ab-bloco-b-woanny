@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: ''
-  cache_timestamp: '2025-12-01 00:29:47'
+  cache_timestamp: '2025-12-02 01:55:57'
   filters:
   - crud
 expanded:
@@ -20,6 +20,7 @@ expanded:
 - poo@bloco_d-crud-com-mapas-e-enumerações
 tasks:
   poo@contato: '{rate:100, human:amigo, iagen:encontrar_alguns_erros, alone:7, study:300}'
+  poo@agenda: '{rate:100, iagen:encontrar_erros, other:forum, alone:8, study:200}'
 flags:
   quests: 0
   tracks: 0
@@ -27,4 +28,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@contato
+selected: poo@agenda
