@@ -1,0 +1,11 @@
+2025-12-12 11:20:07, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-12 11:20:08, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:83
+2025-12-12 11:20:10, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-12 11:30:37, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-12 11:30:38, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:88
+2025-12-12 11:30:40, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-12 11:31:04, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-12 11:31:04, EXEC, v:1, k:poo@shapes, mode:FULL, rate:60, size:94
+2025-12-12 11:31:17, EXEC, v:1, k:poo@shapes, mode:FULL, rate:80, size:96
+2025-12-12 11:33:01, EXEC, v:1, k:poo@shapes, mode:FULL, rate:100, size:96
+2025-12-12 11:33:14, MOVE, v:1, k:poo@shapes, mode:BACK

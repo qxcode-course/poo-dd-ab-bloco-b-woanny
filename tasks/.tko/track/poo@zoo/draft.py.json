@@ -1,0 +1,84 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-07_11-48-45",
+            "content": "@@ -1,73 +0,0 @@\n-class Animal:%0A    def __init__(self, nome: str):%0A        self.nome = nome\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-12-07_11-57-56",
+            "content": "@@ -70,412 +70,4 @@\n nome\n-%0A%0A    def apresentar_nome(self):%0A        print(f%22Eu sou um(a) %7Bself.nome%7D!%22)%0A%0A    def fazer_som(self):%0A        raise NotImplementedError(%22Subclasse deve implementar fazer_som()%22)%0A%0A    def mover(self):%0A        raise NotImplementedError(%22Subclasse deve implementar mover()%22)%0A%0Asimba = Leao(%22Simba%22)%0Adumbo = Elefante(%22Dumbo%22)%0Anagini = Cobra(%22Reginalda%22)%0A%0Aapresentar(simba)%0Aapresentar(dumbo)%0Aapresentar(reginalda)\n",
+            "lines": "3"
+        },
+        {
+            "label": "2025-12-07_12-15-43",
+            "content": "@@ -51,26 +51,24 @@\n        self.\n-__\n nome = nome%0A\n@@ -130,26 +130,24 @@\n um(a) %7Bself.\n-__\n nome%7D!%22)%0A%0A  \n@@ -156,16 +156,17 @@\n def \n-get_n\n+fazer_s\n om\n-e\n (sel\n@@ -182,250 +182,170 @@\n    r\n-eturn self.__nome%0A    %0Aclass Leao(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Roooaaar!%22)%0A%0A    def mover(self):%0A        print(%22O le%C3%A3o est%C3%A1 correndo pela savana.%22)%0A    %0A%0A#\n+aise NotImplementedError(%22Subclasse deve implementar fazer_som()%22)%0A%0A    def mover(self):%0A        raise NotImplementedError(%22Subclasse deve implementar mover()%22)%0A%0A\n simb\n@@ -362,17 +362,16 @@\n Simba%22)%0A\n-#\n dumbo = \n@@ -388,17 +388,16 @@\n Dumbo%22)%0A\n-#\n nagini =\n@@ -417,17 +417,16 @@\n alda%22)%0A%0A\n-#\n apresent\n@@ -435,17 +435,16 @@\n (simba)%0A\n-#\n apresent\n@@ -457,9 +457,8 @@\n bo)%0A\n-#\n apre\n",
+            "lines": "20"
+        },
+        {
+            "label": "2025-12-07_12-27-07",
+            "content": "@@ -202,191 +202,8 @@\n nome\n-%0A%0A    def apresentar(self):%0A        self.apresentar_nome()%0A        self.fazer_som()%0A        self.mover()%0A        print(f%22Tipo do objeto: %7Btype(self).__name__%7D%22)%0A        print(%22-%22 * 3)\n %0A   \n@@ -400,16 +400,28 @@\n correndo\n+ pela savana\n .%22)%0A    \n@@ -422,24 +422,22 @@\n )%0A    %0A%0A\n-napoleao\n+#simba\n  = Leao(\n@@ -441,28 +441,74 @@\n ao(%22\n-Napole%C3%A3\n+Simba%22)%0A#dumbo = Elefante(%22Dumb\n o%22)%0A\n+#\n na\n-poleao.\n+gini = Cobra(%22Reginalda%22)%0A%0A#\n apre\n@@ -518,43 +518,52 @@\n tar(\n+simba\n )%0A\n-napoleao.fazer_som()%0Anapoleao.mover(\n+#apresentar(dumbo)%0A#apresentar(reginalda\n )\n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-12-07_12-31-13",
+            "content": "@@ -218,32 +218,109 @@\n resentar(self):%0A\n+        self.apresentar_nome()%0A        self.fazer_som()%0A        self.mover()%0A\n         print(f%22\n@@ -359,16 +359,39 @@\n me__%7D%22)%0A\n+        print(%22-%22 * 3)%0A\n     %0Acla\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-12-07_12-32-00",
+            "content": "@@ -230,39 +230,8 @@\n f):%0A\n-        self.apresentar_nome()%0A\n     \n",
+            "lines": "28"
+        },
+        {
+            "label": "2025-12-07_12-32-17",
+            "content": "@@ -261,54 +261,8 @@\n e()%0A\n-        self.fazer_som()%0A        self.mover()%0A\n     \n@@ -571,21 +571,16 @@\n resentar\n-_nome\n ()%0Anapol\n@@ -611,30 +611,8 @@\n .mover()\n-%0Anapoleao.apresentar()\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-12-07_12-34-13",
+            "content": "@@ -124,17 +124,18 @@\n %22Eu sou \n-o\n+um\n (a) %7Bsel\n@@ -543,29 +543,15 @@\n int(\n-f%22%7Banimal.get_nome()%7D\n+%22O le%C3%A3o\n  est\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-12-07_12-35-56",
+            "content": "@@ -541,20 +541,22 @@\n rint(f%22%7B\n-self\n+animal\n .get_nom\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-12-07_12-36-34",
+            "content": "@@ -322,9 +322,17 @@\n t(f%22\n-O\n+Tipo do o\n bjet\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-12-07_12-37-15",
+            "content": "@@ -570,252 +570,8 @@\n o.%22)\n-%0A%0Aclass Elefante(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Barulho de elefante q n sei como %C3%A9.%22)%0A%0A    def mover(self):%0A        print(%22%7Bself.get_nome()%7D est%C3%A1 caminhando.%22)\n %0A   \n@@ -691,112 +691,4 @@\n ar()\n-%0A%0Acarlos = Elefante(%22Carlos%22)%0Acarlos.apresentar_nome()%0Acarlos.fazer_som()%0Acarlos.mover()%0Acarlos.apresentar()\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-12-07_12-41-11",
+            "content": "@@ -817,17 +817,16 @@\n )%0A    %0A%0A\n-#\n napoleao\n@@ -845,17 +845,16 @@\n ole%C3%A3o%22)%0A\n-#\n napoleao\n@@ -872,17 +872,16 @@\n _nome()%0A\n-#\n napoleao\n@@ -893,17 +893,16 @@\n r_som()%0A\n-#\n napoleao\n@@ -914,9 +914,8 @@\n r()%0A\n-#\n napo\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-12-07_12-41-35",
+            "content": "@@ -765,33 +765,32 @@\n :%0A        print(\n-f\n %22%7Bself.get_nome(\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-12-07_12-41-47",
+            "content": "@@ -815,224 +815,8 @@\n o.%22)\n-%0A%0Aclass Cobra(Animal):%0A    def __init__(self, nome: str):%0A        super().__init__(nome)%0A%0A    def fazer_som(self):%0A        print(%22Ssssss...%22)%0A%0A    def mover(self):%0A        print(f%22%7Bself.get_nome()%7D est%C3%A1 rastejando.%22)\n %0A   \n@@ -939,17 +939,16 @@\n ntar()%0A%0A\n-#\n carlos =\n@@ -967,17 +967,16 @@\n arlos%22)%0A\n-#\n carlos.a\n@@ -992,17 +992,16 @@\n _nome()%0A\n-#\n carlos.f\n@@ -1011,17 +1011,16 @@\n r_som()%0A\n-#\n carlos.m\n@@ -1026,17 +1026,16 @@\n mover()%0A\n-#\n carlos.a\n@@ -1049,121 +1049,4 @@\n ar()\n-%0A%0Avenenosa = Cobra(%22Venenosa%22)%0Avenenosa.apresentar_nome()%0Avenenosa.fazer_som()%0Avenenosa.mover()%0Avenenosa.apresentar()\n",
+            "lines": "48"
+        },
+        {
+            "label": "2025-12-07_12-44-06",
+            "content": "@@ -1034,16 +1034,17 @@\n )%0A    %0A%0A\n+#\n napoleao\n@@ -1063,16 +1063,17 @@\n ole%C3%A3o%22)%0A\n+#\n napoleao\n@@ -1091,16 +1091,17 @@\n _nome()%0A\n+#\n napoleao\n@@ -1113,16 +1113,17 @@\n r_som()%0A\n+#\n napoleao\n@@ -1131,16 +1131,17 @@\n mover()%0A\n+#\n napoleao\n@@ -1155,16 +1155,17 @@\n ntar()%0A%0A\n+#\n carlos =\n@@ -1184,16 +1184,17 @@\n arlos%22)%0A\n+#\n carlos.a\n@@ -1210,16 +1210,17 @@\n _nome()%0A\n+#\n carlos.f\n@@ -1230,16 +1230,17 @@\n r_som()%0A\n+#\n carlos.m\n@@ -1246,16 +1246,17 @@\n mover()%0A\n+#\n carlos.a\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-12-07_12-44-51",
+            "content": "class Animal:\n    def __init__(self, nome: str):\n        self.__nome = nome\n\n    def apresentar_nome(self):\n        print(f\"Eu sou o(a) {self.__nome}!\")\n\n    def get_nome(self):\n        return self.__nome\n\n    def apresentar(self):\n        self.apresentar_nome()\n        self.fazer_som()\n        self.mover()\n        print(f\"Objeto: {type(self).__name__}\")\n    \nclass Leao(Animal):\n    def __init__(self, nome: str):\n        super().__init__(nome)\n\n    def fazer_som(self):\n        print(\"Roooaaar!\")\n\n    def mover(self):\n        print(f\"{self.get_nome()} est\u00e1 correndo.\")\n\nclass Elefante(Animal):\n    def __init__(self, nome: str):\n        super().__init__(nome)\n\n    def fazer_som(self):\n        print(\"Barulho de elefante q n sei como \u00e9.\")\n\n    def mover(self):\n        print(f\"{self.get_nome()} est\u00e1 caminhando.\")\n\nclass Cobra(Animal):\n    def __init__(self, nome: str):\n        super().__init__(nome)\n\n    def fazer_som(self):\n        print(\"Ssssss...\")\n\n    def mover(self):\n        print(f\"{self.get_nome()} est\u00e1 rastejando.\")\n    \n\nnapoleao = Leao(\"Napole\u00e3o\")\nnapoleao.apresentar_nome()\nnapoleao.fazer_som()\nnapoleao.mover()\nnapoleao.apresentar()\n\ncarlos = Elefante(\"Carlos\")\ncarlos.apresentar_nome()\ncarlos.fazer_som()\ncarlos.mover()\ncarlos.apresentar()\n\nvenenosa = Cobra(\"Venenosa\")\nvenenosa.apresentar_nome()\nvenenosa.fazer_som()\nvenenosa.mover()\nvenenosa.apresentar()",
+            "lines": "64"
+        }
+    ]
+}

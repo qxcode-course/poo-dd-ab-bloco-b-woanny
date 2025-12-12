@@ -1,0 +1,59 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-11_12-24-10",
+            "content": "@@ -1,482 +0,0 @@\n-class Shape:%0A    def getArea(self):%0A        raise NotImplementedError('Subclasse deve implementar getArea')%0A%0A    def getPerimeter(self):%0A        raise NotImplementedError('Subclasse deve implementar getPerimeter')%0A%0A    def getName(self):%0A        raise NotImplementedError('Subclasse deve implementar getName')%0A    %0Aclass Point2D:%0A    def __init__(self, x: float, y: float):%0A        self.x = x%0A        self.y = y%0A%0A    def __str__(self):%0A        return f'(%7Bself.x:.2f%7D, %7Bself.y:.2f%7D)'\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-12-11_12-34-55",
+            "content": "@@ -41,54 +41,71 @@\n     \n-pass%0A%0A    def getPeri\n+raise NotImple\n me\n+n\n te\n-r(self):%0A        pass\n+dError('Subclasse deve implementar getArea')\n %0A%0A  \n@@ -113,20 +113,25 @@\n  def get\n-Name\n+Perimeter\n (self):%0A\n@@ -142,771 +142,255 @@\n     \n-pass%0A %0Aclass Point2D:%0A    def __init__(self, x: float, y: float):%0A        self.x = x%0A        self.y = y%0A%0A    def __str__(self):%0A        return f%22(%7Bself.x:.2f%7D, %7Bself.y:.2f%7D)%22\n+raise NotImplementedError('Subclasse deve implementar getPerimeter')%0A\n %0A    \n-%0A%0A\n def \n-main():%0A    shapes = %5B%5D%0A%0A    while True:%0A        line = input()%0A        print('$' + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A%0A        elif args%5B0%5D == %22circle%22:%0A            x = float(args%5B1%5D)%0A            y = float(args%5B2%5D)%0A            r = float(args%5B3%5D)%0A            shapes.append(Circle(Point2D(x, y), r))%0A%0A        elif args%5B0%5D == %22rect%22:%0A            x1 = float(args%5B1%5D)%0A            y1 = float(args%5B2%5D)%0A            x2 = float(args%5B3%5D)%0A            y2 = float(args%5B4%5D)%0A            shapes.append(Rectangle(Point2D(x1, y1), Point2D(x2, y2)))%0A\n+getName(self):%0A        raise NotImplementedError('Subclasse deve implementar getName')%0A    %0Aclass Point2D:%0A    def __init__(self, x: float, y: float):%0A        self.x = x\n %0A   \n@@ -398,335 +398,85 @@\n     \n+s\n el\n-if args%5B0%5D == %22show%22:%0A            for s in shapes:%0A                print(s)%0A%0A        elif args%5B0%5D == %22info%22:%0A            for s in shapes:%0A                area = s.getArea()%0A                peri = s.getPerimeter()%0A                print(f%22%7Bs.getName()%7D: A=%7Barea:.2f%7D P=%7Bperi:.2f%7D%22)%0A%0A        else:%0A            print(%22error%22)%0A%0Amain()\n+f.y = y%0A%0A    def __str__(self):%0A        return f'(%7Bself.x:.2f%7D, %7Bself.y:.2f%7D)'\n",
+            "lines": "17"
+        },
+        {
+            "label": "2025-12-11_12-59-31",
+            "content": "@@ -299,72 +299,8 @@\n     \n-%0Aclass Circle(Shape):%0A    pass%0A%0Aclass Rectangle(Shape):%0A    pass\n %0A%0Ade\n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-12-11_13-00-33",
+            "content": "@@ -321,455 +321,16 @@\n e):%0A\n-%0A\n     \n-PI = 3.14%0A%0A    def __init__(self, center: Point2D, radius: float):%0A        self.name = %22Circ%22%0A        self.center = center%0A        self.radius = radius%0A%0A    def getName(self):%0A        return self.name%0A%0A    def getArea(self):%0A        return Circle.PI * self.radius * self.radius%0A%0A    def getPerimeter(self):%0A        return 2 * Circle.PI * self.radius%0A%0A    def __str__(self):%0A        return f%22%7Bself.name%7D: C=%7Bself.center%7D, R=%7Bself.radius:.2f%7D%22%0A\n+pass\n %0A%0Acl\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-12-11_13-01-27",
+            "content": "@@ -6,17 +6,16 @@\n  Shape:%0A\n-%0A\n     def \n@@ -121,17 +121,17 @@\n    pass%0A\n-%0A\n+ \n %0Aclass P\n@@ -138,17 +138,16 @@\n oint2D:%0A\n-%0A\n     def \n@@ -260,17 +260,17 @@\n return f\n-'\n+%22\n (%7Bself.x\n@@ -289,17 +289,17 @@\n .y:.2f%7D)\n-'\n+%22\n %0A    %0Acl\n@@ -413,14 +413,14 @@\n e = \n-'\n+%22\n Circ\n-'\n+%22\n %0A   \n@@ -712,17 +712,17 @@\n return f\n-'\n+%22\n %7Bself.na\n@@ -762,17 +762,17 @@\n ius:.2f%7D\n-'\n+%22\n %0A%0A%0Aclass\n@@ -949,13 +949,13 @@\n  == \n-'end'\n+%22end%22\n :%0A  \n@@ -970,16 +970,17 @@\n   break%0A\n+%0A\n         \n@@ -999,16 +999,16 @@\n  == \n-'\n+%22\n circle\n-'\n+%22\n :%0A  \n@@ -1150,16 +1150,17 @@\n y), r))%0A\n+%0A\n         \n@@ -1179,14 +1179,14 @@\n  == \n-'\n+%22\n rect\n-'\n+%22\n :%0A  \n@@ -1382,16 +1382,17 @@\n , y2)))%0A\n+%0A\n         \n@@ -1411,14 +1411,14 @@\n  == \n-'\n+%22\n show\n-'\n+%22\n :%0A  \n@@ -1469,16 +1469,17 @@\n rint(s)%0A\n+%0A\n         \n@@ -1498,14 +1498,14 @@\n  == \n-'\n+%22\n info\n-'\n+%22\n :%0A  \n@@ -1629,17 +1629,17 @@\n  print(f\n-'\n+%22\n %7Bs.getNa\n@@ -1670,18 +1670,19 @@\n eri:.2f%7D\n-')\n+%22)%0A\n %0A       \n@@ -1710,16 +1710,17 @@\n int(\n-'\n+%22\n error\n-')\n+%22)%0A\n %0Amai\n",
+            "lines": "81"
+        },
+        {
+            "label": "2025-12-11_13-04-11",
+            "content": "@@ -767,16 +767,17 @@\n :.2f%7D'%0A%0A\n+%0A\n class Re\n@@ -800,171 +800,12 @@\n     \n-def __init__(self, p1: Point2D, p2: Point2D):%0A        self.name = 'Rect'%0A        self.p1 = p1%0A        self.p2 = p2%0A%0A    def getName(self):%0A        return self.name\n+pass\n %0A%0Ade\n",
+            "lines": "78"
+        },
+        {
+            "label": "2025-12-12_11-20-08",
+            "content": "@@ -962,157 +962,8 @@\n name\n-%0A    %0A    def getArea(self):%0A        largura = abs(self.p1.x - self.p2.x)%0A        altura = abs(self.p1.y - self.p2.y)%0A        return largura * altura\n %0A%0Ade\n",
+            "lines": "83"
+        },
+        {
+            "label": "2025-12-12_11-30-38",
+            "content": "@@ -1113,169 +1113,8 @@\n ra%0A%0A\n-    def getPerimeter(self):%0A        largura = abs(self.p1.x - self.p2.x)%0A        altura = abs(self.p1.y - self.p2.y)%0A        return 2 * (largura + altura)%0A    %0A%0A\n def \n",
+            "lines": "88"
+        },
+        {
+            "label": "2025-12-12_11-31-04",
+            "content": "@@ -1272,88 +1272,8 @@\n     \n-%0A    def __str__(self):%0A        return f'%7Bself.name%7D: P1=%7Bself.p1%7D P2=%7Bself.p2%7D'\n %0A%0Ade\n",
+            "lines": "94"
+        },
+        {
+            "label": "2025-12-12_11-31-17",
+            "content": "@@ -337,11 +337,8 @@\n 3.14\n-159\n %0A%0A  \n",
+            "lines": "96"
+        },
+        {
+            "label": "2025-12-12_11-33-01",
+            "content": "class Shape:\n\n    def getArea(self):\n        pass\n\n    def getPerimeter(self):\n        pass\n\n    def getName(self):\n        pass\n\n\nclass Point2D:\n\n    def __init__(self, x: float, y: float):\n        self.x = x\n        self.y = y\n\n    def __str__(self):\n        return f'({self.x:.2f}, {self.y:.2f})'\n    \nclass Circle(Shape):\n\n    PI = 3.14159\n\n    def __init__(self, center: Point2D, radius: float):\n        self.name = 'Circ'\n        self.center = center\n        self.radius = radius\n\n    def getName(self):\n        return self.name\n\n    def getArea(self):\n        return Circle.PI * self.radius * self.radius\n\n    def getPerimeter(self):\n        return 2 * Circle.PI * self.radius\n\n    def __str__(self):\n        return f'{self.name}: C={self.center}, R={self.radius:.2f}'\n\nclass Rectangle(Shape):\n    def __init__(self, p1: Point2D, p2: Point2D):\n        self.name = 'Rect'\n        self.p1 = p1\n        self.p2 = p2\n\n    def getName(self):\n        return self.name\n    \n    def getArea(self):\n        largura = abs(self.p1.x - self.p2.x)\n        altura = abs(self.p1.y - self.p2.y)\n        return largura * altura\n\n    def getPerimeter(self):\n        largura = abs(self.p1.x - self.p2.x)\n        altura = abs(self.p1.y - self.p2.y)\n        return 2 * (largura + altura)\n    \n    def __str__(self):\n        return f'{self.name}: P1={self.p1} P2={self.p2}'\n\ndef main():\n    shapes = []\n\n    while True:\n        line = input()\n        print('$' + line)\n        args = line.split()\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'circle':\n            x = float(args[1])\n            y = float(args[2])\n            r = float(args[3])\n            shapes.append(Circle(Point2D(x, y), r))\n        elif args[0] == 'rect':\n            x1 = float(args[1])\n            y1 = float(args[2])\n            x2 = float(args[3])\n            y2 = float(args[4])\n            shapes.append(Rectangle(Point2D(x1, y1), Point2D(x2, y2)))\n        elif args[0] == 'show':\n            for s in shapes:\n                print(s)\n        elif args[0] == 'info':\n            for s in shapes:\n                area = s.getArea()\n                peri = s.getPerimeter()\n                print(f'{s.getName()}: A={area:.2f} P={peri:.2f}')\n        else:\n            print('error')\nmain()",
+            "lines": "96"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+2025-12-11 12:21:49, MOVE, v:1, k:poo@pagamento, mode:PICK
+2025-12-11 12:21:50, EXEC, v:1, k:poo@pagamento, mode:LOCK, rate:0
+2025-12-11 12:21:55, MOVE, v:1, k:poo@pagamento, mode:BACK
+2025-12-11 12:22:25, SELF, v:1, k:poo@pagamento, rate:90, iagen:encontrar_alguns_erros, alone:7, study:200
+2025-12-11 12:22:51, MOVE, v:1, k:poo@shapes, mode:DOWN
+2025-12-11 12:24:09, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-11 12:24:10, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:0
+2025-12-11 12:24:13, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-11 12:34:54, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-11 12:34:55, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:17
+2025-12-11 12:34:56, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-11 12:59:30, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-11 12:59:31, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:57
+2025-12-11 12:59:34, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-11 13:00:32, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-11 13:00:33, EXEC, v:1, k:poo@shapes, mode:FULL, rate:0, size:62
+2025-12-11 13:01:27, EXEC, v:1, k:poo@shapes, mode:FULL, rate:40, size:81
+2025-12-11 13:01:52, MOVE, v:1, k:poo@shapes, mode:BACK
+2025-12-11 13:04:10, MOVE, v:1, k:poo@shapes, mode:PICK
+2025-12-11 13:04:11, EXEC, v:1, k:poo@shapes, mode:FULL, rate:40, size:78
+2025-12-11 13:04:13, MOVE, v:1, k:poo@shapes, mode:BACK

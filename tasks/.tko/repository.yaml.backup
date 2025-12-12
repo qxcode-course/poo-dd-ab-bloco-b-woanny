@@ -12,15 +12,16 @@ sources:
   type: clone
   branch: master
   cache_path: ''
-  cache_timestamp: '2025-12-02 01:55:57'
+  cache_timestamp: '2025-12-12 11:19:14'
   filters:
-  - crud
+  - herança
 expanded:
 - poo@campanha-principal
-- poo@bloco_d-crud-com-mapas-e-enumerações
+- poo@bloco_f-herança-i
 tasks:
-  poo@contato: '{rate:100, human:amigo, iagen:encontrar_alguns_erros, alone:7, study:300}'
-  poo@agenda: '{rate:100, iagen:encontrar_erros, other:forum, alone:8, study:200}'
+  poo@zoo: '{rate:90, human:amigo, other:forum, alone:8, study:200}'
+  poo@pagamento: '{rate:90, iagen:encontrar_alguns_erros, alone:7, study:200}'
+  poo@shapes: '{rate:100}'
 flags:
   quests: 0
   tracks: 0
@@ -28,4 +29,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@agenda
+selected: poo@shapes
