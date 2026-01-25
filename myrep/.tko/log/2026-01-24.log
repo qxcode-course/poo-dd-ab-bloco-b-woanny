@@ -1,0 +1,101 @@
+2026-01-24 18:12:23, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 18:12:24, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 18:16:24, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:118
+2026-01-24 18:16:25, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 18:17:41, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 18:17:41, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:124
+2026-01-24 18:17:43, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 18:18:11, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 18:18:11, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:128
+2026-01-24 18:19:07, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:138
+2026-01-24 18:19:16, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 18:20:33, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 18:20:33, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:140
+2026-01-24 18:20:34, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:27:45, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:27:46, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:227
+2026-01-24 19:27:49, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:28:07, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:28:07, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:227
+2026-01-24 19:28:09, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:33:38, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:33:39, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:173
+2026-01-24 19:33:40, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:34:20, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:34:21, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:217
+2026-01-24 19:34:36, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:35:26, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:35:27, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 19:35:28, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 19:37:06, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:137
+2026-01-24 19:37:06, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:137
+2026-01-24 19:37:44, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:209
+2026-01-24 19:37:48, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:37:52, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:37:53, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 19:39:50, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:212
+2026-01-24 19:39:51, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:39:57, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:39:57, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 19:40:36, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:220
+2026-01-24 19:40:38, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:42:27, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:42:27, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:229
+2026-01-24 19:42:28, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:43:31, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:43:32, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:235
+2026-01-24 19:43:33, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:45:07, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:45:07, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 19:48:44, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:235
+2026-01-24 19:48:45, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:51:57, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:51:58, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:234
+2026-01-24 19:52:00, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:52:19, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:52:20, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 19:52:21, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:53:07, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:53:08, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:222
+2026-01-24 19:53:12, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 19:54:14, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 19:54:15, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:177
+2026-01-24 19:54:28, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 20:19:20, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 20:19:21, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:226
+2026-01-24 20:19:24, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 20:20:05, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 20:20:05, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:234
+2026-01-24 20:22:13, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:220
+2026-01-24 20:22:21, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 20:22:29, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 20:22:29, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:220
+2026-01-24 20:23:30, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:220
+2026-01-24 20:23:53, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:220
+2026-01-24 20:24:04, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:220
+2026-01-24 20:25:15, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:220
+2026-01-24 20:25:58, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:220
+2026-01-24 20:27:37, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:148
+2026-01-24 20:28:27, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:152
+2026-01-24 20:29:11, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 20:29:11, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 20:29:11, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 20:29:11, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 20:29:11, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 20:29:11, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 20:29:22, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 20:29:22, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0
+2026-01-24 20:30:01, EXEC, v:1, k:poo@petshop, mode:FULL, rate:25, size:174
+2026-01-24 20:31:42, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:191
+2026-01-24 20:34:00, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:191
+2026-01-24 20:36:14, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:195
+2026-01-24 20:37:58, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:174
+2026-01-24 20:39:40, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:187
+2026-01-24 20:41:00, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:188
+2026-01-24 20:41:00, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:188
+2026-01-24 20:41:49, MOVE, v:1, k:poo@petshop, mode:BACK
+2026-01-24 20:42:46, SELF, v:1, k:poo@petshop, guide:videos_no_youtbe, other:forum, alone:9, study:500
+2026-01-24 20:47:01, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-24 20:47:02, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:177
+2026-01-24 20:49:42, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:161
+2026-01-24 20:49:55, MOVE, v:1, k:poo@petshop, mode:BACK

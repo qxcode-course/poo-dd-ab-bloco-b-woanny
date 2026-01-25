@@ -8,28 +8,23 @@ sources:
   cache_timestamp: ''
   filters: null
 - database: poo
-  link: /workspaces/poo-dd-ab-bloco-b-woanny/myrep/.tko/cache/poo/Readme.md
+  link: https://github.com/qxcodepoo/arcade.git
   type: clone
   branch: master
-  cache_path: /workspaces/poo-dd-ab-bloco-b-woanny/myrep/.tko/cache/poo/Readme.md
-  cache_timestamp: '2025-12-07 11:33:24'
-  filters:
-  - listas
+  cache_path: ''
+  cache_timestamp: '2026-01-25 13:20:18'
+  filters: null
 expanded:
+- poo@configuracao-e-aquecimento
 - poo@campanha-principal
-- poo@bloco_c-listas
+- poo@bloco_f-herança-i
+- poo@bloco_d-crud-com-mapas-e-enumerações
 tasks:
-  poo@array: '{rate:100, other:foruns_e_sites_q_estavam_ensinando, alone:9, study:130}'
-  poo@budega: '{rate:100, iagen:gpt_tirar_duvidas, guide:aula, other:foruns, alone:6,
-    study:100}'
-  poo@lapiseira: '{rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:7,
-    study:300}'
-  poo@pula-pula: '{rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:6,
-    study:120}'
-  poo@cinema: '{rate:100, human:amigo, iagen:tirar_duvidas, other:foruns, alone:7,
-    study:200}'
-  poo@tabuleiro: '{rate:80, iagen:tentar_entender_onde_errei, other:foruns, alone:6,
-    study:300}'
+  poo@petshop: '{guide:videos_no_youtbe, other:forum, alone:9, study:500}'
+  poo@porquinho: '{rate:100, guide:videos_do_assunto_no__youtube, other:discussoes_sobre_o_assunto_em_foruns,
+    alone:8, study:300}'
+  poo@cofre: '{rate:100, guide:vi_videos_no_youtube_sobre_o_assunto, other:vi_discussoes_sobre_o_assunto_em_foruns,
+    alone:8, study:400}'
 flags:
   quests: 0
   tracks: 0
@@ -37,4 +32,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@junkfood
+selected: poo@petshop

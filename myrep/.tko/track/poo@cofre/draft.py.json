@@ -1,0 +1,144 @@
+{
+    "patches": [
+        {
+            "label": "2026-01-13_11-10-34",
+            "content": "@@ -1,94 +0,0 @@\n-frffgfgtfrfrtyyyyyyyyyyyyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\n",
+            "lines": "0"
+        },
+        {
+            "label": "2026-01-13_14-05-13",
+            "content": "@@ -1,226 +1,94 @@\n-%0A%0Adef main():%0A    cofre = Cofre()%0A    while True:%0A        line = input()%0A        print('$' + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == 'end':%0A                break%0A        else:%0A            print(%22fail%22)%0A%0Amain()\n+frffgfgtfrfrtyyyyyyyyyyyyyhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\n",
+            "lines": "1"
+        },
+        {
+            "label": "2026-01-13_14-12-40",
+            "content": "@@ -1,122 +1,4 @@\n-class Valuable:%0A     pass%0A%0Aclass Coin(Valuable):%0A     pass%0A%0Aclass Item(Valuable):%0A     pass%0A     %0Aclass Pig:%0A     pass\n %0A%0Ade\n@@ -15,17 +15,21 @@\n     \n-pig = Pig\n+cofre = Cofre\n ()%0A \n",
+            "lines": "15"
+        },
+        {
+            "label": "2026-01-13_14-15-51",
+            "content": "@@ -13,75 +13,8 @@\n le:%0A\n-    def getLabel(self):%0A         pass%0A%0A    def getValue(self):%0A    \n     \n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-01-13_14-40-56",
+            "content": "@@ -91,48 +91,8 @@\n ss%0A%0A\n-    def getVolume(self):%0A         pass%0A%0A\n clas\n@@ -357,727 +357,8 @@\n eak%0A\n-        elif args%5B0%5D == 'init':%0A            volume_max = int(args%5B1%5D)%0A            pig = Pig(volume_max)%0A        elif args%5B0%5D == 'show':%0A            print(pig)%0A        elif args%5B0%5D == 'addCoin':%0A            value = int(args%5B1%5D)%0A            coin_map = %7B%0A                10: Coin.M10,%0A                25: Coin.M25,%0A                50: Coin.M50,%0A                100: Coin.M100%0A            %7D%0A            if value in coin_map:%0A                if not pig.addValuable(coin_map%5Bvalue%5D):%0A                    if pig.isBroken():%0A                        print('fail: the pig is broken')%0A                    else:%0A                        print('fail: the pig is full')%0A            else:%0A                print('fail: moeda inv%C3%A1lida')%0A\n     \n",
+            "lines": "29"
+        },
+        {
+            "label": "2026-01-13_14-45-53",
+            "content": "@@ -1126,261 +1126,12 @@\n   el\n-if args%5B0%5D == 'addItem':%0A            label = args%5B1%5D%0A            value = float(args%5B2%5D)%0A            volume = int(args%5B3%5D)%0A            item = Item(label, volume, value)%0A            if not pig.addValuable(item):%0A                if pig.isBroken():%0A        \n+se:%0A\n     \n@@ -1148,804 +1148,16 @@\n int(\n-'\n+%22\n fail\n-: the pig is broken')%0A                else:%0A                    print('fail: the pig is full')%0A        elif args%5B0%5D == 'break':%0A            if not pig.breakPig():%0A                print('fail: the pig is already broken')%0A        elif args%5B0%5D == 'extractCoins':%0A            coins = pig.getCoins()%0A            if coins is None:%0A                print('fail: you must break the pig first')%0A            else:%0A                print('%5B' + ', '.join(str(coin) for coin in coins) + '%5D')%0A        elif args%5B0%5D == 'extractItems':%0A            items = pig.getItems()%0A            if items is None:%0A                print('fail: you must break the pig first')%0A            else:%0A                print('%5B' + ', '.join(str(item) for item in items) + '%5D')%0A        else:%0A            print('fail: comando inv%C3%A1lido')\n+%22)%0A\n %0Amai\n",
+            "lines": "53"
+        },
+        {
+            "label": "2026-01-13_14-46-41",
+            "content": "@@ -157,113 +157,13 @@\n     \n-M10 = (0.10, 1, 'M10')%0A    M25 = (0.25, 2, 'M25')%0A    M50 = (0.50, 3, 'M50')%0A    M100 = (1.00, 4, 'M100')\n+ pass\n %0A%0Acl\n",
+            "lines": "77"
+        },
+        {
+            "label": "2026-01-13_14-53-21",
+            "content": "@@ -1,24 +1,4 @@\n-fdg~~~%C3%A7kkjkkjjjjjjj%0A\n clas\n",
+            "lines": "80"
+        },
+        {
+            "label": "2026-01-13_14-57-20",
+            "content": "@@ -1,12 +1,32 @@\n+fdg~~~%C3%A7kkjkkjjjjjjj%0A\n class Valuab\n@@ -284,199 +284,8 @@\n ')%0A%0A\n-    def __init__(self, value, volume, label):%0A        self._value = value%0A        self._volume = volume%0A        self._label = label%0A%0A    def getLabel(self):%0A        return self._labelabel()%0A%0A\n clas\n",
+            "lines": "81"
+        },
+        {
+            "label": "2026-01-13_14-59-59",
+            "content": "@@ -12,106 +12,9 @@\n ble:\n- # base para coisas com valor: moedas e itens%0A    # m%C3%A9todos para serem implementadas pelas filhas\n %0A\n+\n     \n@@ -129,109 +129,8 @@\n pass\n-%0A    %0A    def __str__(self):%0A        return f'%7Bself.getLabel()%7D:%7Bself.getValue()%7D:%7Bself.getVolume()%7D'\n %0A%0Acl\n@@ -447,126 +447,12 @@\n abel\n-()%0A    %0A    def getValue(self):%0A        return self._value()%0A    %0A    def getVolume(self):%0A        return self._volume\n+abel\n ()%0A%0A\n",
+            "lines": "88"
+        },
+        {
+            "label": "2026-01-13_15-05-27",
+            "content": "@@ -133,25 +133,8 @@\n lf):\n- # nome do objeto\n %0A   \n@@ -172,28 +172,8 @@\n lf):\n- # valor em dinheiro\n %0A   \n@@ -212,117 +212,27 @@\n lf):\n- # volume q ocupa no porco com esteroides%0A         pass%0A    %0A    # em teoria deve retornar label:valor:volume\n+%0A         pass%0A    \n %0A   \n@@ -350,22 +350,9 @@\n le):\n- # filha moeda\n+%0A\n     \n@@ -820,252 +820,13 @@\n     \n-def __init__(self, volumeMax):%0A        self._broken = False      # estado do porquinho (intacto/quebrado)%0A        self._valuables = %5B%5D      # lista de objetos de valor guardados%0A        self._volumeMax = volumeMax  # capacidade m%C3%A1xima de volume\n+ pass\n %0A%0Ade\n",
+            "lines": "98"
+        },
+        {
+            "label": "2026-01-13_15-14-08",
+            "content": "@@ -1206,429 +1206,8 @@\n me%0A%0A\n-    def addValuable(self, valuable): # adiciona coisas com valor no porquinho%0A        if self._broken: # verifica se o porquinho ta quebrado ou n%0A            return False%0A        %0A        if self.getVolume() + valuable.getVolume() %3E self._volumeMax: # verifica se tem espa%C3%A7o suficiente%0A            return False%0A        %0A        self._valuables.append(valuable)  # adiciona o objeto na lista%0A        %0A        return True%0A%0A\n def \n",
+            "lines": "101"
+        },
+        {
+            "label": "2026-01-13_15-18-31",
+            "content": "@@ -1627,752 +1627,8 @@\n ue%0A%0A\n-    def breakPig(self): # quebra opobre porquinho pra remover suas entranhas%0A        if self._broken:%0A            return False  # marcar q ta quebrado, destruido, desvivido%0A        %0A        self._broken = True%0A        return True%0A    %0A    def getCoins(self): # pega as moedas do cofrinho s%C3%B3 se ele tiver quebrado%0A        if not self._broken:%0A            return None # n da pra tirar dinheiro com ele fechado%0A%0A        # separa as moedas do resto%0A        coins = %5B%5D  %0A        items = %5B%5D%0A        for v in self._valuables:%0A            if isinstance(v, Coin):%0A                coins.append(v)%0A            else:%0A                items.append(v)%0A        %0A        self._valuables = items # mantem as  coisas remove moedas%0A        return coins%0A    %0A    %0A%0A\n def \n",
+            "lines": "112"
+        },
+        {
+            "label": "2026-01-13_15-26-06",
+            "content": "@@ -2061,23 +2061,22 @@\n oedas do\n-s itens\n+ resto\n %0A       \n@@ -2313,16 +2313,17 @@\n ntem as \n+ \n coisas r\n@@ -2369,496 +2369,8 @@\n     \n-def getItems(self): # pega os itens do porquinho se ele tiver quebrado%0A        if not self._broken:%0A            return None  # n da pra tirar coisa com ele fechado  %0A%0A        # separa os itens das moedas%0A        coins = %5B%5D%0A        items = %5B%5D%0A        for v in self._valuables:%0A            if isinstance(v, Item):%0A                items.append(v)%0A            else:%0A                coins.append(v)%0A        %0A        self._valuables = coins # mantem as moedas remove itens%0A        return items \n %0A%0Ade\n",
+            "lines": "137"
+        },
+        {
+            "label": "2026-01-13_15-29-24",
+            "content": "@@ -53,18 +53,17 @@\n  e itens\n-e\n %0A\n+\n     # m%C3%A9\n@@ -147,16 +147,17 @@\n  objeto%0A\n+ \n         \n@@ -153,32 +153,32 @@\n o%0A         pass%0A\n-\n %0A    def getValu\n@@ -206,16 +206,17 @@\n inheiro%0A\n+ \n         \n@@ -212,32 +212,32 @@\n o%0A         pass%0A\n-\n %0A    def getVolu\n@@ -287,16 +287,17 @@\n eroides%0A\n+ \n         \n@@ -2855,18 +2855,16 @@\n items %0A%0A\n-%0A%0A\n def main\n",
+            "lines": "151"
+        },
+        {
+            "label": "2026-01-13_16-14-51",
+            "content": "@@ -2857,1127 +2857,8 @@\n s %0A%0A\n-    def calcValue(self): # calcula o valor TOTAL de tudo no porquinho%0A        total = 0.0%0A        for v in self._valuables:%0A            total += v.getValue()%0A        return total%0A    %0A    def getVolume(self): # calcula o volume TOTAL ocupado no porquinho%0A        total = 0%0A        for v in self._valuables:%0A            total += v.getVolume()%0A        return total%0A%0A    def getVolumeMax(self): # retorna a capacidade m%C3%A1xima do porquinho%0A        return self._volumeMax%0A    %0A    def isBroken(self): # verifica se o porquinho ta quebrado%0A        return self._broken%0A    %0A    def __str__(self): # string do estado atual do porquinho%0A        valuables_str = '%5B' + ', '.join(str(v) for v in self._valuables) + '%5D' # lista de objetos%0A%0A        value_str = f'%7Bself.calcValue():.2f%7D' # formata valor pra 2 casas decimais%0A        %0A        volume_str = f'%7Bself.getVolume()%7D/%7Bself._volumeMax%7D' # volume atual/m%C3%A1ximo%0A%0A        status = 'broken' if self._broken else 'intact' # estado: intecto ou quebrado%0A        %0A        return f'%7Bvaluables_str%7D : %7Bvalue_str%7D$ : %7Bvolume_str%7D : %7Bstatus%7D' # %5Bitens%5D : valor$ : volume/volume max : status\n %0A%0Ade\n",
+            "lines": "153"
+        },
+        {
+            "label": "2026-01-13_16-28-22",
+            "content": "@@ -451,11 +451,10 @@\n e()%7D\n-.\n '%0A\n+\n %0Acla\n@@ -926,601 +926,18 @@\n le):\n-# itens guardados no cofrinho%0A    def __init__(self, label, volume, value):%0A        self._label = label      # nome do item%0A        self._volume = volume    # volume que ocupa%0A        self._value = value      # valor monet%C3%A1rio do item%0A%0A    # m%C3%A9todos do Valuable%0A    def getLabel(self):%0A        return self._label%0A    %0A    def getValue(self):%0A        return self._value%0A    %0A    def getVolume(self):%0A        return self._volume%0A    %0A    # alterar propriedades do item%0A    def setLabel(self, label):%0A        self._label = label%0A    %0A    def setVolume(self, volume):%0A        self._volume = volume\n+%0A     pass\n %0A   \n@@ -3837,24 +3837,32 @@\n ou quebrado%0A\n+        \n %0A        ret\n",
+            "lines": "180"
+        },
+        {
+            "label": "2026-01-13_16-37-02",
+            "content": "@@ -49,24 +49,25 @@\n edas e itens\n+e\n %0A    # m%C3%A9tod\n@@ -91,17 +91,17 @@\n lementad\n-o\n+a\n s pelas \n@@ -295,25 +295,29 @@\n        pass%0A\n+    \n %0A\n-\n     # em teo\n@@ -490,21 +490,16 @@\n oeda    \n-%0A    \n M10 = (0\n@@ -2381,30 +2381,8 @@\n vido\n- pra n quebrar de novo\n %0A   \n@@ -2896,20 +2896,21 @@\n ntem as \n-iten\n+coisa\n s remove\n@@ -3089,20 +3089,21 @@\n a tirar \n-item\n+coisa\n  com ele\n@@ -4408,17 +4408,17 @@\n ado: int\n-a\n+e\n cto ou q\n@@ -4558,24 +4558,24 @@\n def main():%0A\n+\n     pig = Pi\n@@ -4576,17 +4576,16 @@\n g = Pig(\n-0\n )%0A    wh\n",
+            "lines": "200"
+        },
+        {
+            "label": "2026-01-13_16-45-50",
+            "content": "@@ -482,24 +482,135 @@\n a moeda    %0A\n+    M10 = (0.10, 1, 'M10')%0A    M25 = (0.25, 2, 'M25')%0A    M50 = (0.50, 3, 'M50')%0A    M100 = (1.00, 4, 'M100')%0A%0A\n     def __in\n@@ -772,32 +772,34 @@\n turn self._label\n+()\n %0A    %0A    def ge\n@@ -830,32 +830,34 @@\n turn self._value\n+()\n %0A    %0A    def ge\n@@ -898,16 +898,18 @@\n ._volume\n+()\n %0A%0Aclass \n@@ -4734,16 +4734,20 @@\n         \n+    \n break%0A  \n@@ -4792,30 +4792,66 @@\n     \n-pig = Pig(int(args%5B1%5D)\n+volume_max = int(args%5B1%5D)%0A            pig = Pig(volume_max\n )%0A  \n@@ -5020,32 +5020,20 @@\n 10: Coin\n-(0.10, 1, '\n+.\n M10\n-')\n ,%0A      \n@@ -5050,32 +5050,20 @@\n 25: Coin\n-(0.25, 2, '\n+.\n M25\n-')\n ,%0A      \n@@ -5080,32 +5080,20 @@\n 50: Coin\n-(0.50, 3, '\n+.\n M50\n-')\n ,%0A      \n@@ -5111,33 +5111,21 @@\n 00: Coin\n-(1.00, 4, '\n+.\n M100\n-')\n %0A       \n@@ -5131,16 +5131,54 @@\n       %7D%0A\n+            if value in coin_map:%0A    \n         \n@@ -5242,85 +5242,230 @@\n     \n-print('fail: the pig is broken' if pig.isBroken() else 'fail: the pig is full\n+    if pig.isBroken():%0A                        print('fail: the pig is broken')%0A                    else:%0A                        print('fail: the pig is full')%0A            else:%0A                print('fail: moeda inv%C3%A1lida\n ')%0A \n@@ -5514,57 +5514,137 @@\n     \n-item = Item(args%5B1%5D, in\n+label = args%5B1%5D%0A            value = floa\n t(args%5B\n-3%5D), floa\n+2%5D)%0A            volume = in\n t(args%5B\n-2\n+3\n %5D)\n+%0A            item = Item(label, volume, value\n )%0A  \n@@ -5703,63 +5703,128 @@\n     \n-print('fail: the pig is broken' if pig.isBroken() else \n+if pig.isBroken():%0A                    print('fail: the pig is broken')%0A                else:%0A                    print(\n 'fai\n@@ -5889,16 +5889,23 @@\n         \n+if not \n pig.brea\n@@ -5910,16 +5910,74 @@\n eakPig()\n+:%0A                print('fail: the pig is already broken')\n %0A       \n@@ -6199,15 +6199,21 @@\n tr(c\n+oin\n ) for c\n+oin\n  in \n@@ -6456,15 +6456,21 @@\n tr(i\n+tem\n ) for i\n+tem\n  in \n@@ -6520,16 +6520,34 @@\n nt('fail\n+: comando inv%C3%A1lido\n ')%0Amain(\n",
+            "lines": "201"
+        },
+        {
+            "label": "2026-01-13_16-49-04",
+            "content": "@@ -4266,17 +4266,16 @@\n  'broken\n-.\n ' if sel\n",
+            "lines": "182"
+        },
+        {
+            "label": "2026-01-13_16-50-11",
+            "content": "@@ -486,70 +486,11 @@\n eda \n-%0A\n    \n- M10 = None%0A    M25 = None%0A    M50 = None%0A    M100 = None%0A\n %0A   \n@@ -787,164 +787,8 @@\n lume\n-%0A    %0A# cria%C3%A7%C3%A3o das moedas%0ACoin.M10 = Coin('M10', 0.10, 1)%0ACoin.M25 = Coin('M25', 0.25, 2)%0ACoin.M50 = Coin('M50', 0.50, 3)%0ACoin.M100 = Coin('M100', 1.00, 4)\n %0A%0Acl\n",
+            "lines": "182"
+        },
+        {
+            "label": "2026-01-13_16-53-37",
+            "content": "@@ -442,16 +442,17 @@\n olume()%7D\n+.\n '%0A%0Aclass\n",
+            "lines": "193"
+        },
+        {
+            "label": "2026-01-13_16-54-40",
+            "content": "@@ -422,19 +422,16 @@\n tValue()\n-.2f\n %7D:%7Bself.\n",
+            "lines": "193"
+        },
+        {
+            "label": "2026-01-13_16-55-09",
+            "content": "@@ -418,25 +418,24 @@\n f.getValue()\n-:\n .2f%7D:%7Bself.g\n",
+            "lines": "193"
+        },
+        {
+            "label": "2026-01-13_16-55-55",
+            "content": "@@ -2275,16 +2275,19 @@\n na lista\n+%0A  \n       %0A \n@@ -4480,24 +4480,25 @@\n us = 'broken\n+.\n ' if self._b\n",
+            "lines": "193"
+        },
+        {
+            "label": "2026-01-13_16-57-32",
+            "content": "@@ -3814,55 +3814,8 @@\n nho%0A\n-        if self._broken:%0A            return 0%0A%0A\n     \n",
+            "lines": "192"
+        },
+        {
+            "label": "2026-01-13_17-00-05",
+            "content": "@@ -486,16 +486,78 @@\n  moeda %0A\n+    M10 = None%0A    M25 = None%0A    M50 = None%0A    M100 = None%0A%0A\n     def \n",
+            "lines": "195"
+        },
+        {
+            "label": "2026-01-16_12-05-18",
+            "content": "class Valuable: # base para coisas com valor: moedas e itens\n    # m\u00e9todos para serem implementados pelas filhas\n    def getLabel(self): # nome do objeto\n        pass\n\n    def getValue(self): # valor em dinheiro\n        pass\n\n    def getVolume(self): # volume q ocupa no porco com esteroides\n        pass\n\n    # em teoria deve retornar label:valor:volume\n    def __str__(self):\n        return f'{self.getLabel()}:{self.getValue():.2f}:{self.getVolume()}'\n\nclass Coin(Valuable): # filha moeda \n    def __init__(self, value, volume, label):\n        self._value = value\n        self._volume = volume\n        self._label = label\n\n    def getLabel(self):\n        return self._label\n    \n    def getValue(self):\n        return self._value\n    \n    def getVolume(self):\n        return self._volume\n    \n# cria\u00e7\u00e3o das moedas\nCoin.M10 = Coin('M10', 0.10, 1)\nCoin.M25 = Coin('M25', 0.25, 2)\nCoin.M50 = Coin('M50', 0.50, 3)\nCoin.M100 = Coin('M100', 1.00, 4)\n\nclass Item(Valuable):# itens guardados no cofrinho\n    def __init__(self, label, volume, value):\n        self._label = label      # nome do item\n        self._volume = volume    # volume que ocupa\n        self._value = value      # valor monet\u00e1rio do item\n\n    # m\u00e9todos do Valuable\n    def getLabel(self):\n        return self._label\n    \n    def getValue(self):\n        return self._value\n    \n    def getVolume(self):\n        return self._volume\n    \n    # alterar propriedades do item\n    def setLabel(self, label):\n        self._label = label\n    \n    def setVolume(self, volume):\n        self._volume = volume\n     \nclass Pig:\n    def __init__(self, volumeMax):\n        self._broken = False      # estado do porquinho (intacto/quebrado)\n        self._valuables = []      # lista de objetos de valor guardados\n        self._volumeMax = volumeMax  # capacidade m\u00e1xima de volume\n\n    def addValuable(self, valuable): # adiciona coisas com valor no porquinho\n        if self._broken: # verifica se o porquinho ta quebrado ou n\n            return False\n        \n        if self.getVolume() + valuable.getVolume() > self._volumeMax: # verifica se tem espa\u00e7o suficiente\n            return False\n        \n        self._valuables.append(valuable)  # adiciona o objeto na lista      \n        return True\n\n    def breakPig(self): # quebra opobre porquinho pra remover suas entranhas\n        if self._broken:\n            return False  # marcar q ta quebrado, destruido, desvivido pra n quebrar de novo\n        \n        self._broken = True\n        return True\n    \n    def getCoins(self): # pega as moedas do cofrinho s\u00f3 se ele tiver quebrado\n        if not self._broken:\n            return None # n da pra tirar dinheiro com ele fechado\n\n        # separa as moedas dos itens\n        coins = []  \n        items = []\n        for v in self._valuables:\n            if isinstance(v, Coin):\n                coins.append(v)\n            else:\n                items.append(v)\n        \n        self._valuables = items # mantem as itens remove moedas\n        return coins\n    \n    def getItems(self): # pega os itens do porquinho se ele tiver quebrado\n        if not self._broken:\n            return None  # n da pra tirar item com ele fechado  \n\n        # separa os itens das moedas\n        coins = []\n        items = []\n        for v in self._valuables:\n            if isinstance(v, Item):\n                items.append(v)\n            else:\n                coins.append(v)\n        \n        self._valuables = coins # mantem as moedas remove itens\n        return items \n\n    def calcValue(self): # calcula o valor TOTAL de tudo no porquinho\n        total = 0.0\n        for v in self._valuables:\n            total += v.getValue()\n        return total\n    \n    def getVolume(self): # calcula o volume TOTAL ocupado no porquinho\n        if self._broken:\n            return 0\n\n        total = 0\n        for v in self._valuables:\n            total += v.getVolume()\n        return total\n\n    def getVolumeMax(self): # retorna a capacidade m\u00e1xima do porquinho\n        return self._volumeMax\n    \n    def isBroken(self): # verifica se o porquinho ta quebrado\n        return self._broken\n    \n    def __str__(self): # string do estado atual do porquinho\n        valuables_str = '[' + ', '.join(str(v) for v in self._valuables) + ']' # lista de objetos\n\n        value_str = f'{self.calcValue():.2f}' # formata valor pra 2 casas decimais\n        \n        volume_str = f'{self.getVolume()}/{self._volumeMax}' # volume atual/m\u00e1ximo\n\n        status = 'broken' if self._broken else 'intact' # estado: intacto ou quebrado\n\n        return f'{valuables_str} : {value_str}$ : {volume_str} : {status}' # [itens] : valor$ : volume/volume max : status\n\ndef main():\n    pig = Pig(0)\n    while True:\n        line = input()\n        print('$' + line)\n        args = line.split()\n\n        if args[0] == 'end':\n            break\n        elif args[0] == 'init':\n            pig = Pig(int(args[1]))\n        elif args[0] == 'show':\n            print(pig)\n        elif args[0] == 'addCoin':\n            value = int(args[1])\n            coin_map = {\n                10: Coin(0.10, 1, 'M10'),\n                25: Coin(0.25, 2, 'M25'),\n                50: Coin(0.50, 3, 'M50'),\n                100: Coin(1.00, 4, 'M100')\n            }\n            if not pig.addValuable(coin_map[value]):\n                print('fail: the pig is broken' if pig.isBroken() else 'fail: the pig is full')\n        elif args[0] == 'addItem':\n            item = Item(args[1], int(args[3]), float(args[2]))\n            if not pig.addValuable(item):\n                print('fail: the pig is broken' if pig.isBroken() else 'fail: the pig is full')\n        elif args[0] == 'break':\n            pig.breakPig()\n        elif args[0] == 'extractCoins':\n            coins = pig.getCoins()\n            if coins is None:\n                print('fail: you must break the pig first')\n            else:\n                print('[' + ', '.join(str(c) for c in coins) + ']')\n        elif args[0] == 'extractItems':\n            items = pig.getItems()\n            if items is None:\n                print('fail: you must break the pig first')\n            else:\n                print('[' + ', '.join(str(i) for i in items) + ']')\n        else:\n            print('fail')\nmain()",
+            "lines": "190"
+        }
+    ]
+}

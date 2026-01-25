@@ -1,0 +1,23 @@
+2026-01-14 15:10:23, MOVE, v:1, k:poo@porquinho, mode:DOWN
+2026-01-14 15:10:26, MOVE, v:1, k:poo@porquinho, mode:PICK
+2026-01-14 15:10:30, EXEC, v:1, k:poo@porquinho, mode:FULL, rate:0, size:0
+2026-01-14 15:10:40, MOVE, v:1, k:poo@porquinho, mode:BACK
+2026-01-14 15:10:43, MOVE, v:1, k:poo@porquinho, mode:PICK
+2026-01-14 15:10:43, EXEC, v:1, k:poo@porquinho, mode:FULL, rate:0, size:1
+2026-01-14 15:10:44, EXEC, v:1, k:poo@porquinho, mode:FULL, rate:0
+2026-01-14 15:10:45, MOVE, v:1, k:poo@porquinho, mode:BACK
+2026-01-14 15:16:56, MOVE, v:1, k:poo@porquinho, mode:PICK
+2026-01-14 15:16:57, EXEC, v:1, k:poo@porquinho, mode:FULL, rate:0, size:11
+2026-01-14 15:16:58, MOVE, v:1, k:poo@porquinho, mode:BACK
+2026-01-14 15:44:05, MOVE, v:1, k:poo@porquinho, mode:PICK
+2026-01-14 15:44:06, EXEC, v:1, k:poo@porquinho, mode:FULL, rate:0, size:25
+2026-01-14 15:44:07, MOVE, v:1, k:poo@porquinho, mode:BACK
+2026-01-14 19:29:01, MOVE, v:1, k:poo@porquinho, mode:PICK
+2026-01-14 19:29:01, EXEC, v:1, k:poo@porquinho, mode:FULL, rate:0, size:24
+2026-01-14 19:29:03, MOVE, v:1, k:poo@porquinho, mode:BACK
+2026-01-14 20:45:20, MOVE, v:1, k:poo@porquinho, mode:PICK
+2026-01-14 20:53:51, EXEC, v:1, k:poo@porquinho, mode:FULL, rate:0, size:31
+2026-01-14 20:53:53, MOVE, v:1, k:poo@porquinho, mode:BACK
+2026-01-14 20:59:03, MOVE, v:1, k:poo@porquinho, mode:PICK
+2026-01-14 20:59:04, EXEC, v:1, k:poo@porquinho, mode:FULL, rate:0, size:36
+2026-01-14 20:59:05, MOVE, v:1, k:poo@porquinho, mode:BACK

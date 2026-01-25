@@ -1,0 +1,5 @@
+2026-01-25 13:21:55, SELF, v:1, k:poo@porquinho, rate:100, guide:videos_do_assunto_no__youtube, other:discussoes_sobre_o_assunto_em_foruns, alone:8, study:2000
+2026-01-25 13:22:19, SELF, v:1, k:poo@porquinho, rate:100, guide:videos_do_assunto_no__youtube, other:discussoes_sobre_o_assunto_em_foruns, alone:8, study:300
+2026-01-25 13:24:30, MOVE, v:1, k:poo@petshop, mode:PICK
+2026-01-25 13:24:31, EXEC, v:1, k:poo@petshop, mode:FULL, rate:0, size:157
+2026-01-25 13:24:39, MOVE, v:1, k:poo@petshop, mode:BACK

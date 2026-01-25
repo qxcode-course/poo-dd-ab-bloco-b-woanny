@@ -1,0 +1,119 @@
+{
+    "patches": [
+        {
+            "label": "2026-01-14_15-10-30",
+            "content": "@@ -1 +0,0 @@\n-q\n",
+            "lines": "0"
+        },
+        {
+            "label": "2026-01-14_15-10-43",
+            "content": "@@ -1,292 +1 @@\n-class Coin:  #uma moeda%0A    #moedas dispon%C3%ADveis%0A    C10 = None %0A    C25 = None%0A    C50 = None%0A    C100 = None%0A%0A    def __init__(self, value, volume, label):%0A        self._value = value    # vlor da moeda%0A        self._volume = volume  # volume que ocupa %0A        self._label = label    # nome\n+q\n",
+            "lines": "1"
+        },
+        {
+            "label": "2026-01-14_15-16-57",
+            "content": "@@ -1,7 +1,4 @@\n-%0A%0A%0A\n clas\n@@ -289,209 +289,4 @@\n nome\n-%0A%0A    # Retorna o valor da moeda%0A    def getValue(self):%0A        return self._value%0A    %0A    # Retorna o volume da moeda%0A    def getVolume(self):%0A        return self._volume%0A    %0Adef main():%0A    pig = None\n",
+            "lines": "11"
+        },
+        {
+            "label": "2026-01-14_15-44-06",
+            "content": "@@ -1,557 +1,5 @@\n-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n+%0A\n %0A%0Acl\n",
+            "lines": "25"
+        },
+        {
+            "label": "2026-01-14_19-29-01",
+            "content": "@@ -1,9 +1,562 @@\n+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n %0A\n-\n %0Aclass C\n@@ -1031,16 +1031,16 @@\n main():%0A\n+\n     pig \n@@ -1049,311 +1049,4 @@\n None\n-%0A        if args%5B0%5D == 'end':%0A            break        %0A        elif args%5B0%5D == 'init':%0A            volume_max = int(args%5B1%5D)  # Capacidade m%C3%A1xima%0A            pig = Pig(volume_max)      # Cria novo porquinho       %0A        elif args%5B0%5D == 'show':%0A            print(pig)  # Usa o m%C3%A9todo __str__ da classe Pig\n",
+            "lines": "24"
+        },
+        {
+            "label": "2026-01-14_20-53-51",
+            "content": "@@ -497,110 +497,8 @@\n one%0A\n-    while True:%0A        line = input()%0A        print('$' + line)%0A        args = line.split()%0A        %0A\n     \n",
+            "lines": "31"
+        },
+        {
+            "label": "2026-01-14_20-59-04",
+            "content": "@@ -1,12 +1,14 @@\n+%0A%0A\n class Coin: \n@@ -11,1808 +11,509 @@\n in: \n-# moeda %0A    def __init__(self, value: float, volume: int, label: str):%0A        self._value = value%0A        self._volume = volume%0A        self._label = label%0A%0A    def getValue(self) -%3E float:%0A        return self._value%0A%0A    def getVolume(self) -%3E int:%0A        return self._volume%0A%0A    def getLabel(self) -%3E str:%0A        return self._label%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself._value:.2f%7D:%7Bself._volume%7D..%22%0A%0A# moedas%0ACoin.C10 = Coin(0.10, 1, %22C10%22)%0ACoin.C25 = Coin(0.25, 2, %22C25%22)%0ACoin.C50 = Coin(0.50, 3, %22C50%22)%0ACoin.C100 = Coin(1.00, 4, %22C100%22)%0A%0A%0Aclass Item: # itens guardados no cofrinho%0A    def __init__(self, label: str, volume: int):%0A        self._label = label%0A        self._volume = volume%0A%0A    def getLabel(self) -%3E str:%0A        return self._label%0A%0A    def getVolume(self) -%3E int:%0A        return self._volume%0A%0A    def setLabel(self, label: str):%0A        self._label = label%0A%0A    def setVolume(self, volume: int):%0A        self._volume = volume%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself._label%7D:%7Bself._volume%7D%22%0A%0A%0Aclass Pig:%0A    def __init__(self, volumeMax: int):%0A        self._broken = False%0A        self._coins = %5B%5D%0A        self._items = %5B%5D%0A        self._volumeMax = volumeMax%0A%0A    def addCoin(self, coin: Coin) -%3E bool:%0A        if self._broken:%0A            return False%0A        if self.getVolume() + coin.\n+ #uma moeda%0A    #moedas dispon%C3%ADveis%0A    C10 = None %0A    C25 = None%0A    C50 = None%0A    C100 = None%0A%0A    def __init__(self, value, volume, label):%0A        self._value = value    # vlor da moeda%0A        self._volume = volume  # volume que ocupa %0A        self._label = label    # nome%0A%0A    # Retorna o valor da moeda%0A    def \n getV\n-o\n+a\n lu\n-m\n e(\n-) %3E self._volumeMax:%0A            return False%0A        self._coins.append(coin)\n+self):%0A        return self._value\n %0A    \n+%0A\n     \n-return True%0A%0A    def addItem(self, item: Item) -%3E bool:%0A        if self._broken:%0A            return False%0A        if self.getVolume() + item.getVolume() %3E self._volumeMax:%0A            return False%0A        self._items.append(item)%0A        return True%0A%0A    def breakPig(self) -%3E bool\n+# Retorna o volume da moeda%0A    def getVolume(self):%0A        return self._volume%0A    %0Adef main()\n :%0A    \n-    if self._broken:%0A            return False%0A        self._broken =\n+pig = None%0A    while\n  True\n+:\n %0A   \n@@ -521,101 +521,48 @@\n     \n-return True%0A%0A    def extractCoins(self):%0A        if not self._broken:%0A            return No\n+line = input()%0A        print('$' + li\n ne\n+)\n %0A   \n@@ -570,1179 +570,339 @@\n     \n-coins = self._coins%0A        self._coins = %5B%5D%0A        return coins%0A%0A    def extractItems(self):%0A        if not self._broken:%0A            return None%0A        items = self._items%0A        self._items = %5B%5D%0A        return items    # m%C3%A9todos p%C3%BAblicos%0A%0A    def getVolume(self) -%3E int:%0A        if self._broken:%0A            return 0%0A        total = 0%0A        for c in self._coins:%0A            total += c.getVolume()%0A        for i in self._items:%0A            total += i.getVolume()%0A        return total%0A%0A    def getValue(self) -%3E float:%0A        total = 0.0%0A        for c in self._coins:%0A            total += c.getValue()%0A        return total%0A%0A    def getVolumeMax(self) -%3E int:%0A        return self._volumeMax%0A%0A    def isBroken(self) -%3E bool:%0A        return self._broken%0A%0A    def __str__(self) -%3E str:%0A        state = %22broken%22 if self._broken else %22intact%22%0A        coins = %22%5B%22 + %22, %22.join(str(c) for c in self._coins) + %22%5D%22%0A        items = %22%5B%22 + %22, %22.join(str(i) for i in self._items) + %22%5D%22%0A        value = f%22%7Bself.getValue():.2f%7D%22%0A        volume = f%22%7Bself.getVolume()%7D/%7Bself._volumeMax%7D%22%0A        return f%22state=%7Bstate%7D : coins=%7Bcoins%7D : items=%7Bitems%7D : value=%7Bvalue%7D : volume=%7Bvolume%7D%22%0A\n+args = line.split()%0A        %0A        if args%5B0%5D == 'end':%0A            break        %0A        elif args%5B0%5D == 'init':%0A            volume_max = int(args%5B1%5D)  # Capacidade m%C3%A1xima%0A            pig = Pig(volume_max)      # Cria novo porquinho       %0A        elif args%5B0%5D == 'show':%0A            print(pig)  # Usa o m%C3%A9todo __str__ da classe Pig\n",
+            "lines": "36"
+        },
+        {
+            "label": "2026-01-16_12-05-06",
+            "content": "@@ -1136,154 +1136,58 @@\n alse\n- # estado do porquinho (intacto/quebrado)%0A        self._coins = %5B%5D # lista de moedas guardadas%0A        self._items = %5B%5D # lista de itens guardadas\n+%0A        self._coins = %5B%5D%0A        self._items = %5B%5D\n %0A   \n@@ -1222,38 +1222,8 @@\n eMax\n- # capacidade m%C3%A1xima de volume\n %0A%0A  \n@@ -1266,107 +1266,33 @@\n ool:\n- # adiciona moedas no porquinho%0A        if self._broken: # verifica se o porquinho ta quebrado ou n\n+%0A        if self._broken:\n %0A   \n@@ -1382,44 +1382,8 @@\n Max:\n- # verifica se tem espa%C3%A7o suficiente\n %0A   \n@@ -1440,35 +1440,8 @@\n oin)\n- # adiciona moedas na lista\n %0A   \n@@ -1504,106 +1504,33 @@\n ool:\n- # adiciona itens no porquinho%0A        if self._broken: # verifica se o porquinho ta quebrado ou n\n+%0A        if self._broken:\n %0A   \n@@ -1620,44 +1620,8 @@\n Max:\n- # verifica se tem espa%C3%A7o suficiente\n %0A   \n@@ -1678,34 +1678,8 @@\n tem)\n- # adiciona itens na lista\n %0A   \n",
+            "lines": "118"
+        },
+        {
+            "label": "2026-01-16_12-11-25",
+            "content": "@@ -569,16 +569,500 @@\n C100%22)%0A%0A\n+%0Aclass Item: # itens guardados no cofrinho%0A    def __init__(self, label: str, volume: int):%0A        self._label = label%0A        self._volume = volume%0A%0A    def getLabel(self) -%3E str:%0A        return self._label%0A%0A    def getVolume(self) -%3E int:%0A        return self._volume%0A%0A    def setLabel(self, label: str):%0A        self._label = label%0A%0A    def setVolume(self, volume: int):%0A        self._volume = volume%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself._label%7D:%7Bself._volume%7D%22%0A%0A%0A\n class Pi\n",
+            "lines": "118"
+        },
+        {
+            "label": "2026-01-16_12-12-31",
+            "content": "@@ -1,14 +1,12 @@\n-%0A%0A\n class Coin: \n@@ -3009,560 +3009,4 @@\n e%7D%22%0A\n-%0Adef main():%0A    pig = Pig(0)%0A    while True:%0A        line = input()%0A        print('$' + line)%0A        args = line.split()%0A%0A        if args%5B0%5D == %22end%22:%0A            break%0A        elif args%5B0%5D == %22init%22:%0A            pig = Pig(int(args%5B1%5D))%0A        elif args%5B0%5D == %22show%22:%0A            print(pig)%0A        elif args%5B0%5D == %22addCoin%22:%0A            coin_map = %7B%0A                %2210%22: Coin.C10,%0A                %2225%22: Coin.C25,%0A                %2250%22: Coin.C50,%0A                %22100%22: Coin.C100%0A            %7D%0A            if not pig.addCoin(coin_map%5Bargs%5B1%5D%5D):%0A        \n",
+            "lines": "96"
+        },
+        {
+            "label": "2026-01-16_12-16-50",
+            "content": "@@ -1,12 +1,14 @@\n+%0A%0A\n class Coin: \n@@ -3567,974 +3567,4 @@\n     \n-        print(%22fail: the pig is broken%22 if pig._broken else %22fail: the pig is full%22)%0A        elif args%5B0%5D == %22addItem%22:%0A            item = Item(args%5B1%5D, int(args%5B2%5D))%0A            if not pig.addItem(item):%0A                print(%22fail: the pig is broken%22 if pig._broken else %22fail: the pig is full%22)%0A        elif args%5B0%5D == %22break%22:%0A            pig.breakPig()%0A        elif args%5B0%5D == %22extractItems%22:%0A            items = pig.extractItems()%0A            if items is None:%0A                print(%22fail: you must break the pig first%22)%0A                print(%22%5B%5D%22)%0A            else:%0A                print(%22%5B%22 + %22, %22.join(str(i) for i in items) + %22%5D%22)%0A        elif args%5B0%5D == %22extractCoins%22:%0A            coins = pig.extractCoins()%0A            if coins is None:%0A                print(%22fail: you must break the pig first%22)%0A                print(%22%5B%5D%22)%0A            else:%0A                print(%22%5B%22 + %22, %22.join(str(c) for c in coins) + %22%5D%22)%0A        else:%0A            print('fail')%0Amain()\n",
+            "lines": "121"
+        },
+        {
+            "label": "2026-01-16_12-29-51",
+            "content": "@@ -108,25 +108,8 @@\n alue\n- # valor da moeda\n %0A   \n@@ -138,38 +138,8 @@\n lume\n- # volume q ocupa no  cofrinho\n %0A   \n@@ -166,16 +166,8 @@\n abel\n-  # nome\n %0A%0A  \n@@ -1636,189 +1636,67 @@\n elf)\n-: # quebra opobre porquinho pra remover suas entranhas%0A        if self._broken:%0A            return False  # marcar q ta quebrado, destruido, desvivido pra n quebrar de novo%0A        \n+ -%3E bool:%0A        if self._broken:%0A            return False\n %0A   \n@@ -1740,20 +1740,16 @@\n rn True%0A\n-    \n %0A    def\n@@ -1772,57 +1772,8 @@\n lf):\n- # Remove e retorna todas as moedas do porquinho.\n %0A   \n@@ -1928,55 +1928,8 @@\n lf):\n- #Remove e retorna todos os itens do porquinho.\n %0A   \n@@ -2051,16 +2051,38 @@\n rn items\n+    # m%C3%A9todos p%C3%BAblicos\n %0A%0A    de\n@@ -2110,68 +2110,8 @@\n int:\n- # Retorna o volume total ocupado pelo conte%C3%BAdo do porquinho\n %0A   \n",
+            "lines": "142"
+        },
+        {
+            "label": "2026-01-16_12-36-14",
+            "content": "@@ -1296,17 +1296,16 @@\n ue%0A%0A    \n-#\n def addI\n@@ -1370,17 +1370,16 @@\n ho%0A     \n-#\n    if se\n@@ -1439,17 +1439,16 @@\n n%0A      \n-#\n       re\n@@ -1465,17 +1465,16 @@\n %0A       \n-#\n  if self\n@@ -1569,17 +1569,16 @@\n         \n-#\n    retur\n@@ -1593,17 +1593,16 @@\n         \n-#\n self._it\n@@ -1652,17 +1652,16 @@\n         \n-#\n return T\n",
+            "lines": "143"
+        },
+        {
+            "label": "2026-01-16_12-36-48",
+            "content": "@@ -479,16 +479,18 @@\n _volume%7D\n+..\n %22%0A%0A# moe\n@@ -2681,55 +2681,8 @@\n oat:\n- #Retorna o valor total das moedas no porquinho\n %0A   \n@@ -2886,46 +2886,8 @@\n ool:\n- # verifica se o porquinho ta quebrado\n %0A   \n",
+            "lines": "143"
+        },
+        {
+            "label": "2026-01-16_12-40-05",
+            "content": "@@ -483,10 +483,8 @@\n ume%7D\n-..\n %22%0A%0A#\n",
+            "lines": "143"
+        },
+        {
+            "label": "2026-01-16_12-40-22",
+            "content": "@@ -479,16 +479,18 @@\n _volume%7D\n+..\n %22%0A%0A# moe\n@@ -1292,16 +1292,395 @@\n n True%0A%0A\n+    #def addItem(self, item: Item) -%3E bool: # adiciona itens no porquinho%0A     #   if self._broken: # verifica se o porquinho ta quebrado ou n%0A      #      return False%0A       # if self.getVolume() + item.getVolume() %3E self._volumeMax: # verifica se tem espa%C3%A7o suficiente%0A         #   return False%0A        #self._items.append(item) # adiciona itens na lista%0A        #return True%0A\n %0A    def\n",
+            "lines": "143"
+        },
+        {
+            "label": "2026-01-16_12-41-13",
+            "content": "@@ -486,280 +486,8 @@\n %7D%22%0A%0A\n-class Item: # itens guardados no cofrinho%0A    def __init__(self, label: str, volume: int):%0A        self._label = label%0A        self._volume = volume%0A%0A    def getLabel(self) -%3E str:%0A        return self._label%0A%0A    def getVolume(self) -%3E int:%0A        return self._volume%0A%0A%0A%0A\n # mo\n@@ -1294,387 +1294,8 @@\n ue%0A%0A\n-    #def addItem(self, item: Item) -%3E bool: # adiciona itens no porquinho%0A     #   if self._broken: # verifica se o porquinho ta quebrado ou n%0A      #      return False%0A       # if self.getVolume() + item.getVolume() %3E self._volumeMax: # verifica se tem espa%C3%A7o suficiente%0A         #   return False%0A        #self._items.append(item) # adiciona itens na lista%0A        #return True%0A\n %0A   \n",
+            "lines": "136"
+        },
+        {
+            "label": "2026-01-16_12-42-24",
+            "content": "@@ -756,221 +756,8 @@\n me%0A%0A\n-    def setLabel(self, label: str):%0A        self._label = label%0A%0A    def setVolume(self, volume: int):%0A        self._volume = volume%0A%0A    def __str__(self) -%3E str:%0A        return f%22%7Bself._label%7D:%7Bself._volume%7D...%22\n %0A%0A# \n",
+            "lines": "156"
+        },
+        {
+            "label": "2026-01-16_12-42-34",
+            "content": "@@ -1775,24 +1775,25 @@\n n True%0A%0A    \n+#\n def addItem(\n@@ -2073,32 +2073,33 @@\n n False%0A        \n+#\n self._items.appe\n@@ -2133,32 +2133,33 @@\n a lista%0A        \n+#\n return True%0A%0A   \n",
+            "lines": "163"
+        },
+        {
+            "label": "2026-01-16_12-42-55",
+            "content": "@@ -1942,32 +1942,33 @@\n rn False%0A       \n+#\n  if self.getVolu\n@@ -2047,32 +2047,33 @@\n ciente%0A         \n+#\n    return False%0A\n",
+            "lines": "163"
+        },
+        {
+            "label": "2026-01-16_12-43-26",
+            "content": "@@ -1845,32 +1845,33 @@\n  porquinho%0A     \n+#\n    if self._brok\n@@ -1915,32 +1915,33 @@\n rado ou n%0A      \n+#\n       return Fal\n",
+            "lines": "163"
+        },
+        {
+            "label": "2026-01-16_12-43-50",
+            "content": "@@ -961,16 +961,19 @@\n _volume%7D\n+...\n %22%0A%0A# moe\n",
+            "lines": "163"
+        },
+        {
+            "label": "2026-01-16_12-44-10",
+            "content": "class Coin: # moeda \n    def __init__(self, value: float, volume: int, label: str):\n        self._value = value # valor da moeda\n        self._volume = volume # volume q ocupa no  cofrinho\n        self._label = label  # nome\n\n    def getValue(self) -> float:\n        return self._value\n\n    def getVolume(self) -> int:\n        return self._volume\n\n    def getLabel(self) -> str:\n        return self._label\n\n    def __str__(self) -> str:\n        return f\"{self._value:.2f}:{self._volume}\"\n\nclass Item: # itens guardados no cofrinho\n    def __init__(self, label: str, volume: int):\n        self._label = label\n        self._volume = volume\n\n    def getLabel(self) -> str:\n        return self._label\n\n    def getVolume(self) -> int:\n        return self._volume\n\n    def setLabel(self, label: str):\n        self._label = label\n\n    def setVolume(self, volume: int):\n        self._volume = volume\n\n    def __str__(self) -> str:\n        return f\"{self._label}:{self._volume}\"\n\n# moedas\nCoin.C10 = Coin(0.10, 1, \"C10\")\nCoin.C25 = Coin(0.25, 2, \"C25\")\nCoin.C50 = Coin(0.50, 3, \"C50\")\nCoin.C100 = Coin(1.00, 4, \"C100\")\n\nclass Pig:\n    def __init__(self, volumeMax: int):\n        self._broken = False # estado do porquinho (intacto/quebrado)\n        self._coins = [] # lista de moedas guardadas\n        self._items = [] # lista de itens guardadas\n        self._volumeMax = volumeMax # capacidade m\u00e1xima de volume\n\n    def addCoin(self, coin: Coin) -> bool: # adiciona moedas no porquinho\n        if self._broken: # verifica se o porquinho ta quebrado ou n\n            return False\n        if self.getVolume() + coin.getVolume() > self._volumeMax: # verifica se tem espa\u00e7o suficiente\n            return False\n        self._coins.append(coin) # adiciona moedas na lista\n        return True\n\n    def addItem(self, item: Item) -> bool: # adiciona itens no porquinho\n        if self._broken: # verifica se o porquinho ta quebrado ou n\n            return False\n        if self.getVolume() + item.getVolume() > self._volumeMax: # verifica se tem espa\u00e7o suficiente\n            return False\n        self._items.append(item) # adiciona itens na lista\n        return True\n\n    def breakPig(self): # quebra opobre porquinho pra remover suas entranhas\n        if self._broken:\n            return False  # marcar q ta quebrado, destruido, desvivido pra n quebrar de novo\n        \n        self._broken = True\n        return True\n    \n    def extractCoins(self): # Remove e retorna todas as moedas do porquinho.\n        if not self._broken:\n            return None\n        coins = self._coins\n        self._coins = []\n        return coins\n\n    def extractItems(self): #Remove e retorna todos os itens do porquinho.\n        if not self._broken:\n            return None\n        items = self._items\n        self._items = []\n        return items\n\n    def getVolume(self) -> int: # Retorna o volume total ocupado pelo conte\u00fado do porquinho\n        if self._broken:\n            return 0\n        total = 0\n        for c in self._coins:\n            total += c.getVolume()\n        for i in self._items:\n            total += i.getVolume()\n        return total\n\n    def getValue(self) -> float: #Retorna o valor total das moedas no porquinho\n        total = 0.0\n        for c in self._coins:\n            total += c.getValue()\n        return total\n\n    def getVolumeMax(self) -> int:\n        return self._volumeMax\n\n    def isBroken(self) -> bool: # verifica se o porquinho ta quebrado\n        return self._broken\n\n    def __str__(self) -> str:\n        state = \"broken\" if self._broken else \"intact\"\n        coins = \"[\" + \", \".join(str(c) for c in self._coins) + \"]\"\n        items = \"[\" + \", \".join(str(i) for i in self._items) + \"]\"\n        value = f\"{self.getValue():.2f}\"\n        volume = f\"{self.getVolume()}/{self._volumeMax}\"\n        return f\"state={state} : coins={coins} : items={items} : value={value} : volume={volume}\"\n\ndef main():\n    pig = Pig(0)\n    while True:\n        line = input()\n        print('$' + line)\n        args = line.split()\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            pig = Pig(int(args[1]))\n        elif args[0] == \"show\":\n            print(pig)\n        elif args[0] == \"addCoin\":\n            coin_map = {\n                \"10\": Coin.C10,\n                \"25\": Coin.C25,\n                \"50\": Coin.C50,\n                \"100\": Coin.C100\n            }\n            if not pig.addCoin(coin_map[args[1]]):\n                print(\"fail: the pig is broken\" if pig._broken else \"fail: the pig is full\")\n        elif args[0] == \"addItem\":\n            item = Item(args[1], int(args[2]))\n            if not pig.addItem(item):\n                print(\"fail: the pig is broken\" if pig._broken else \"fail: the pig is full\")\n        elif args[0] == \"break\":\n            pig.breakPig()\n        elif args[0] == \"extractItems\":\n            items = pig.extractItems()\n            if items is None:\n                print(\"fail: you must break the pig first\")\n                print(\"[]\")\n            else:\n                print(\"[\" + \", \".join(str(i) for i in items) + \"]\")\n        elif args[0] == \"extractCoins\":\n            coins = pig.extractCoins()\n            if coins is None:\n                print(\"fail: you must break the pig first\")\n                print(\"[]\")\n            else:\n                print(\"[\" + \", \".join(str(c) for c in coins) + \"]\")\n        else:\n            print('fail')\nmain()",
+            "lines": "163"
+        }
+    ]
+}

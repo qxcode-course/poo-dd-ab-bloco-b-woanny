@@ -79,7 +79,5 @@ def main():
             contato.rmFone(index)
         elif args[0] == 'tfav':
             contato.toogleFavorited()
-        else:
-            print("fail")
 
 main()
