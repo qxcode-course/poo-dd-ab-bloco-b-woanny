@@ -12,7 +12,7 @@ sources:
   type: clone
   branch: master
   cache_path: ''
-  cache_timestamp: '2026-01-25 13:20:18'
+  cache_timestamp: '2026-01-29 18:19:25'
   filters: null
 expanded:
 - poo@configuracao-e-aquecimento
@@ -32,4 +32,4 @@ flags:
   graph: 1
   xray: 0
 lang: py
-selected: poo@petshop
+selected: poo@bloco_a-configuração-de-ambiente
